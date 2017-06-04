@@ -1,0 +1,13 @@
+
+nUI/Units/nUI_UnitPanel.lua
+1. When configuring which unitpanel layout to display include a test for group size to make
+   sure it doesn't default to raid10 rather than party if you have 5 or less people.
+
+nUI/Bars/nUI_ButtonBar.lua
+1. Added the new status tests for extrabar and overridebar to the registerstatedriver statement.
+   Ultraxion fights should now work great.  Finally.
+2. Removed extrabar from the registerstatedriver statement as it has to exist alongside the 
+   main action bar.
+
+nUI/Plugins/nUI_ButtonBag.lua
+1. Removed redundant file path for texture icons in button bag to remove green boxes.

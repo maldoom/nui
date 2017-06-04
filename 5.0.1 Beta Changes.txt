@@ -1,0 +1,59 @@
+5.0.1 Beta Changes
+
+Bars/nUI_ButtonBar.lua
+1. References to VehicleMenuBarLeaveButton changed to OverrideActionBarLeaveFrameLeaveButton
+2. Registered new vehicleui page to nUI's ActionBar
+
+Bars/nUI_CooldownBar.lua
+1. Make sure spell.duration exists before comparing it
+
+Bars/nUI_PowerBars.lua
+1. Changed ShardBarFrame to WarlockPowerFrame
+
+Bars/nUI_ShapeshiftBar.lua
+1. Change ShapeshiftButtonTemplate to StanceButtonTemplate
+
+Bars/nUI_XPBar.lua
+1. Estimated XpPerLevel values
+2. Accessing XpPerLevel table values sometimes glitches out so get a local copy to use for maths purposes.
+3. Check if PlayerInfo exists before accessing child values
+
+Integration/nUI_Minimap.lua
+1. MiniMapBattlefieldFrame and MiniMapLFGFrame changed to QueueStatusMinimapButton
+
+Main/nUI.lua
+1. VehicleMenuBar no longer exists so no need to hide it
+
+Plugins/nUI_ButtonBag.lua
+1. MiniMapBattlefieldFrame and MiniMapLFGFrame no longer exists
+
+Plugins/nUI_Location.lua
+1. MiniMapBattlefieldFrame doesn't exist
+
+Units/nUI_UnitCache.lua
+1. GetNumPartyMembers = GetNumSubgroupMembers
+2. GetNumRaidMembers = GetNumGroupMembers
+
+Units/nUI_UnitClass.lua
+1. New Monk Class settings
+
+Units/nUI_UnitPanel.lua
+1. GetNumRaidMembers = GetNumGroupMembers
+
+Units/nUI_UnitRaidGroup.lua
+1. GetRaidRosterInfo = GetGroupRosterInfo
+
+Units/nUI_UnitRange.lua
+1. Sometimes player_info doesn't exist.  Such as when you enter a vehicle.
+
+Units/nUI_UnitReaction.lua
+1. GetNumRaidMembers = GetNumGroupMembers
+2. GetRaidRosterInfo = GetGroupRosterInfo
+3. RAID_ROSTER_UPDATE replaced with GROUP_ROSTER_UPDATE
+4. PARTY_MEMBERS_CHANGED replace with GROUP_ROSTER_UPDATE
+
+Units/nUI_UnitSpec.lua
+1. Revised Talent Querying and display 
+
+Units/nUI_UnitStatus.lua
+1. UnitIsPartyLeader changed to UnitIsGroupLeader

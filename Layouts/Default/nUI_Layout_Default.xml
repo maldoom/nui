@@ -1,0 +1,170 @@
+﻿<!--
+
+Copyright (c) 2008-2017 by K. Scott Piel 
+All Rights Reserved
+
+E-mail: < kscottpiel@gmail.com >
+
+This file is part of nUI.
+
+The author no longer develops or directly supports this addon and has released it
+into the public domain under the Creative Commons Attribution-NonCommercial 3.0 
+Unported license - a copy of which is included in this distribution. This source
+may not be distributed without said license.
+	   
+nUI is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR 
+PURPOSE.  See the enclosed license for more details.
+	
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS  "AS IS" AND 
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT  LIMITED TO, THE IMPLIED 
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, 
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+	
+<Ui xmlns="http://www.blizzard.com/wow/ui" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<Script file="nUI_Layout_Default_Dashboard.lua"/>
+	<Script file="nUI_Layout_Default_Console.lua"/>
+	<Script file="nUI_Layout_Default_Misc.lua"/>
+
+	<!-- Info Panels -->
+	<Script file="InfoPanels\nUI_InfoPanel_CombatLog.lua"/>
+	<Script file="InfoPanels\nUI_InfoPanel_BattlefieldMinimap.lua"/>
+	<Script file="InfoPanels\nUI_InfoPanel_Recount.lua"/>
+	<Script file="InfoPanels\nUI_InfoPanel_Omen3.lua"/>
+	<Script file="InfoPanels\nUI_InfoPanel_KLHThreatMeter.lua"/>
+	<Script file="InfoPanels\nUI_InfoPanel_Skada.lua"/>
+
+	<!-- Player/Target HUD -->
+	<Script file="HUDLayouts\PlayerTarget\nUI_HUDLayout_PlayerTarget.lua"/>
+	<Script file="HUDLayouts\PlayerTarget\nUI_HUDSkin_PlayerTarget_Pet.lua"/>
+	<Script file="HUDLayouts\PlayerTarget\nUI_HUDSkin_PlayerTarget_Castbar.lua"/>
+	<Script file="HUDLayouts\PlayerTarget\nUI_HUDSkin_PlayerTarget_Player.lua"/>
+	<Script file="HUDLayouts\PlayerTarget\nUI_HUDSkin_PlayerTarget_Target.lua"/>
+	<Script file="HUDLayouts\PlayerTarget\nUI_HUDSkin_PlayerTarget_ToT.lua"/>
+
+	<!-- Health/Power HUD-->
+	<Script file="HUDLayouts\HealthPower\nUI_HUDLayout_HealthPower.lua"/>
+	<Script file="HUDLayouts\HealthPower\nUI_HUDSkin_HealthPower_Pet.lua"/>
+	<Script file="HUDLayouts\HealthPower\nUI_HUDSkin_HealthPower_Castbar.lua"/>
+	<Script file="HUDLayouts\HealthPower\nUI_HUDSkin_HealthPower_Player.lua"/>
+	<Script file="HUDLayouts\HealthPower\nUI_HUDSkin_HealthPower_Target.lua"/>
+	<Script file="HUDLayouts\HealthPower\nUI_HUDSkin_HealthPower_ToT.lua"/>
+
+	<!-- Simple HUD -->
+	<Script file="HUDLayouts\NoBars\nUI_HUDLayout_NoBars.lua"/>
+	<Script file="HUDLayouts\NoBars\nUI_HUDSkin_NoBars_Player.lua"/>
+	<Script file="HUDLayouts\NoBars\nUI_HUDSkin_NoBars_Castbar.lua"/>
+	<Script file="HUDLayouts\NoBars\nUI_HUDSkin_NoBars_Target.lua"/>
+
+	<!-- No HUD -->
+	<Script file="HUDLayouts\NoHUD\nUI_HUDLayout_NoHUD.lua"/>
+
+    <!-- All Unit Panels -->
+    <Script file="UnitPanels\nUI_BossFrame.lua"/>
+    
+    <!-- Player Unit Panel -->
+	<Script file="UnitPanels\Solo\nUI_UnitPanel_Solo.lua"/>
+	<Script file="UnitPanels\Solo\nUI_UnitSkin_SoloFocus.lua"/>
+	<Script file="UnitPanels\Solo\nUI_UnitSkin_SoloMouseover.lua"/>
+	<Script file="UnitPanels\Solo\nUI_UnitSkin_SoloPlayer.lua"/>
+	<Script file="UnitPanels\Solo\nUI_UnitSkin_SoloPet.lua"/>
+	<Script file="UnitPanels\Solo\nUI_UnitSkin_SoloPetButton.lua"/>
+	<Script file="UnitPanels\Solo\nUI_UnitSkin_SoloTarget.lua"/>
+	<Script file="UnitPanels\Solo\nUI_UnitSkin_SoloTgtButton.lua"/>
+	<Script file="UnitPanels\Solo\nUI_UnitSkin_SoloToT.lua"/>
+	<Script file="UnitPanels\Solo\nUI_UnitSkin_SoloVehicle.lua"/>
+
+	<!-- Party Unit Panel -->
+	<Script file="UnitPanels\Party\nUI_UnitPanel_Party.lua"/>
+	<Script file="UnitPanels\Party\nUI_UnitSkin_PartyFocus.lua"/>
+	<Script file="UnitPanels\Party\nUI_UnitSkin_PartyLeft.lua"/>
+	<Script file="UnitPanels\Party\nUI_UnitSkin_PartyMouseover.lua"/>
+	<Script file="UnitPanels\Party\nUI_UnitSkin_PartyPlayer.lua"/>
+	<Script file="UnitPanels\Party\nUI_UnitSkin_PartyPet.lua"/>
+	<Script file="UnitPanels\Party\nUI_UnitSkin_PartyPetButton.lua"/>
+	<Script file="UnitPanels\Party\nUI_UnitSkin_PartyRight.lua"/>
+	<Script file="UnitPanels\Party\nUI_UnitSkin_PartyTarget.lua"/>
+	<Script file="UnitPanels\Party\nUI_UnitSkin_PartyTgtButton.lua"/>
+	<Script file="UnitPanels\Party\nUI_UnitSkin_PartyToT.lua"/>
+	<Script file="UnitPanels\Party\nUI_UnitSkin_PartyVehicle.lua"/>
+
+	<!-- Raid10 Unit Panel -->
+	<Script file="UnitPanels\Raid10\nUI_UnitPanel_Raid10.lua"/>
+	<Script file="UnitPanels\Raid10\nUI_UnitSkin_Raid10Focus.lua"/>
+	<Script file="UnitPanels\Raid10\nUI_UnitSkin_Raid10Left.lua"/>
+	<Script file="UnitPanels\Raid10\nUI_UnitSkin_Raid10Mouseover.lua"/>
+	<Script file="UnitPanels\Raid10\nUI_UnitSkin_Raid10Player.lua"/>
+	<Script file="UnitPanels\Raid10\nUI_UnitSkin_Raid10Pet.lua"/>
+	<Script file="UnitPanels\Raid10\nUI_UnitSkin_Raid10PetButton.lua"/>
+	<Script file="UnitPanels\Raid10\nUI_UnitSkin_Raid10Right.lua"/>
+	<Script file="UnitPanels\Raid10\nUI_UnitSkin_Raid10Target.lua"/>
+	<Script file="UnitPanels\Raid10\nUI_UnitSkin_Raid10TgtButton.lua"/>
+	<Script file="UnitPanels\Raid10\nUI_UnitSkin_Raid10ToT.lua"/>
+	<Script file="UnitPanels\Raid10\nUI_UnitSkin_Raid10Vehicle.lua"/>
+
+	<!-- Raid15 Unit Panel -->
+	<Script file="UnitPanels\Raid15\nUI_UnitPanel_Raid15.lua"/>
+	<Script file="UnitPanels\Raid15\nUI_UnitSkin_Raid15Focus.lua"/>
+	<Script file="UnitPanels\Raid15\nUI_UnitSkin_Raid15Left.lua"/>
+	<Script file="UnitPanels\Raid15\nUI_UnitSkin_Raid15Mouseover.lua"/>
+	<Script file="UnitPanels\Raid15\nUI_UnitSkin_Raid15Player.lua"/>
+	<Script file="UnitPanels\Raid15\nUI_UnitSkin_Raid15Pet.lua"/>
+	<Script file="UnitPanels\Raid15\nUI_UnitSkin_Raid15PetButton.lua"/>
+	<Script file="UnitPanels\Raid15\nUI_UnitSkin_Raid15Right.lua"/>
+	<Script file="UnitPanels\Raid15\nUI_UnitSkin_Raid15Target.lua"/>
+	<Script file="UnitPanels\Raid15\nUI_UnitSkin_Raid15TgtButton.lua"/>
+	<Script file="UnitPanels\Raid15\nUI_UnitSkin_Raid15ToT.lua"/>
+	<Script file="UnitPanels\Raid15\nUI_UnitSkin_Raid15Vehicle.lua"/>
+
+	<!-- Raid20 Unit Panel -->
+	<Script file="UnitPanels\Raid20\nUI_UnitPanel_Raid20.lua"/>
+	<Script file="UnitPanels\Raid20\nUI_UnitSkin_Raid20Focus.lua"/>
+	<Script file="UnitPanels\Raid20\nUI_UnitSkin_Raid20Left.lua"/>
+	<Script file="UnitPanels\Raid20\nUI_UnitSkin_Raid20Mouseover.lua"/>
+	<Script file="UnitPanels\Raid20\nUI_UnitSkin_Raid20Player.lua"/>
+	<Script file="UnitPanels\Raid20\nUI_UnitSkin_Raid20Pet.lua"/>
+	<Script file="UnitPanels\Raid20\nUI_UnitSkin_Raid20PetButton.lua"/>
+	<Script file="UnitPanels\Raid20\nUI_UnitSkin_Raid20Right.lua"/>
+	<Script file="UnitPanels\Raid20\nUI_UnitSkin_Raid20Target.lua"/>
+	<Script file="UnitPanels\Raid20\nUI_UnitSkin_Raid20TgtButton.lua"/>
+	<Script file="UnitPanels\Raid20\nUI_UnitSkin_Raid20ToT.lua"/>
+	<Script file="UnitPanels\Raid20\nUI_UnitSkin_Raid20Vehicle.lua"/>
+
+	<!-- Raid25 Unit Panel -->
+	<Script file="UnitPanels\Raid25\nUI_UnitPanel_Raid25.lua"/>
+	<Script file="UnitPanels\Raid25\nUI_UnitSkin_Raid25Focus.lua"/>
+	<Script file="UnitPanels\Raid25\nUI_UnitSkin_Raid25Left.lua"/>
+	<Script file="UnitPanels\Raid25\nUI_UnitSkin_Raid25Mouseover.lua"/>
+	<Script file="UnitPanels\Raid25\nUI_UnitSkin_Raid25Player.lua"/>
+	<Script file="UnitPanels\Raid25\nUI_UnitSkin_Raid25Pet.lua"/>
+	<Script file="UnitPanels\Raid25\nUI_UnitSkin_Raid25PetButton.lua"/>
+	<Script file="UnitPanels\Raid25\nUI_UnitSkin_Raid25Right.lua"/>
+	<Script file="UnitPanels\Raid25\nUI_UnitSkin_Raid25Target.lua"/>
+	<Script file="UnitPanels\Raid25\nUI_UnitSkin_Raid25TgtButton.lua"/>
+	<Script file="UnitPanels\Raid25\nUI_UnitSkin_Raid25ToT.lua"/>
+	<Script file="UnitPanels\Raid25\nUI_UnitSkin_Raid25Vehicle.lua"/>
+
+	<!-- Raid40 Unit Panel -->
+	<Script file="UnitPanels\Raid40\nUI_UnitPanel_Raid40.lua"/>
+	<Script file="UnitPanels\Raid40\nUI_UnitSkin_Raid40Focus.lua"/>
+	<Script file="UnitPanels\Raid40\nUI_UnitSkin_Raid40Left.lua"/>
+	<Script file="UnitPanels\Raid40\nUI_UnitSkin_Raid40Mouseover.lua"/>
+	<Script file="UnitPanels\Raid40\nUI_UnitSkin_Raid40Player.lua"/>
+	<Script file="UnitPanels\Raid40\nUI_UnitSkin_Raid40Pet.lua"/>
+	<Script file="UnitPanels\Raid40\nUI_UnitSkin_Raid40PetButton.lua"/>
+	<Script file="UnitPanels\Raid40\nUI_UnitSkin_Raid40Right.lua"/>
+	<Script file="UnitPanels\Raid40\nUI_UnitSkin_Raid40Target.lua"/>
+	<Script file="UnitPanels\Raid40\nUI_UnitSkin_Raid40TgtButton.lua"/>
+	<Script file="UnitPanels\Raid40\nUI_UnitSkin_Raid40ToT.lua"/>
+	<Script file="UnitPanels\Raid40\nUI_UnitSkin_Raid40Vehicle.lua"/>
+
+</Ui>

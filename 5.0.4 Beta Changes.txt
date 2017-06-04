@@ -1,0 +1,41 @@
+5.0.4 Beta Changes
+
+Units/nUI_UnitRunes.lua
+1. Table name change in blizz code - runeMapping to RUNE_MAPPING
+
+Units/nUI_UnitRange.lua
+1. Changed how the spells are read from the spellbook library to stop spell index errors
+2. Includes new event PLAYER_SPECIALIZATION_CHANGED 
+
+Integration/nUI_Bags.lua
+1. function name change in blizz code
+
+Bars/nUI_PowerBars.lua
+1. Added new Priest Orb Bar Frame to mover system.
+2. Added new Monk Harmony Light Energy Bar Frame to mover system.
+
+Units/nUI_UnitRaidGroup.lua
+1. GetRaidRosterInfo didn't get changed .. Removed changes
+
+Units/nUI_UnitReaction.lua
+1. GetRaidRosterInfo didn't get changed .. Removed changes
+
+Bars/nUI_CooldownBar.lua
+1. addon block errors occur in glyphUI if you use _ in function variable returns changes to emptyVar
+2. Changed how the spells are read from the spellbook library to stop spell index errors
+3. Includes new event PLAYER_SPECIALIZATION_CHANGED 
+
+Bars/nUI_PowerBars.lua
+1. addon block errors occur in glyphUI if you use _ in function variable returns changes to emptyVar
+
+Integration/nUI_ChatFrame.lua
+1. addon block errors occur in glyphUI if you use _ in function variable returns changes to emptyVar
+
+Plugins/nUI_ButtonBag.lua
+1. addon block errors occur in glyphUI if you use _ in function variable returns changed to emptyVar
+2. function name change in blizz code
+3. forgot to take into account that battlefield and LFG frames are the same now and should be on minimap 
+and not in the bag.
+
+Plugins/nUI_Location.lua
+1. addon block errors occur in glyphUI if you use _ in function variable returns changes to emptyVar

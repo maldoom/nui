@@ -1,0 +1,35 @@
+## Interface: 70200
+## Title: nUI
+## Title-deDE: nUI
+## Title-esES: nUI
+## Title-frFR: nUI
+## Title-zhCN: nUI
+## Author: K. Scott Piel / Nordebugger / The Knights Who Say nUI / Nesingwary
+## Version: 7.02.00.00
+## Notes: nUI attempts to integrate many of the most common mods people use into a seamless UI that is free of clutter, visually appealing, intuitive and functional. -- Copyright (c) 2008, 2009 by K. Scott Piel -- All Rights Reserved
+## Notes-deDE: nUI versucht viele der häufigsten Mods zu installieren. Eine Ui die frei ist von Unordnung, optisch ansprechend, intuitiv und funktional. -- Copyright (c) 2008 von K. Scott Piel - Alle Rechte vorbehalten
+## Notes-esES: nUI trata de integrar muchos de los mods m�s frecuentemente utilizados en una interfaz ordenada, visualmente atractiva, intuitiva y funcional. -- Copyright (c) 2008 por K. Scott Piel -- Todos los derechos reservados
+## Notes-frFR: nUI essaye d'intégrer les mods les plus couramment utilisés par les joueurs dans une UI tout en un non encombrante, visuellement agréable, intuitive et fonctionnelle -- Copyright 2008 -- Tout droit réservé.
+## Notes-zhCN: nUI企圖整合許多最常見的MODS成為一個無瑕的用戶端界面讓您體驗到無雜波，與在視覺上的吸引力，直觀和功能。版權所有（C）2008年的K. Scott Piel掌上-保留所有權利
+## Notes-zhTW: nUI企图整合许多最常见的MODS成为一个无瑕的客户端界面让您体验到无杂波，与在视觉上的吸引力，直观和功能。版权所有（C）2008年的K. Scott Piel掌上-保留所有权利
+## X-Category: Interface Enhancements
+## X-CompatibleLocales: enUS, enGB, deDE, esES, frFR, zhTW, zhCN
+## X-Credits: Ansu, Aldea, Carlos, Khisanth, Tullia, Ian, RavenWhisper
+## X-License: Creative Commons Attribution-NonCommercial 3.0 Unported
+## X-Localizations: enUS, deDE, esES, frFR, zhTW, zhCN
+## X-ReleaseDate: $Date: 2008-03-27 01:18:39 -0700 (Thu, 27 Mar 2008) $
+## X-RelSite-Curse: 12907
+## Dependencies: Blizzard_ObjectiveTracker
+## OptionalDeps: Omen,KLHThreatMeter,Recount
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: nUI_SysInfo,nUI_DebugLog,nUI_RuntimeProfile,nUI_XpErrata
+## SavedVariablesPerCharacter: nUI_Options,nUI_Data
+Main\nUI.xml
+Layouts\Default\nUI_Layout_Default.xml
+Tools\nUI_Tools.xml
+Integration\nUI_Integration.xml
+Plugins\nUI_Plugins.xml
+Bars\nUI_Bars.xml
+HUD\nUI_HUD.xml
+Units\nUI_Units.xml

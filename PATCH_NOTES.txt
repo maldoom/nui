@@ -1,0 +1,1796 @@
+﻿-------------------------------------------------------------------------------------------
+Version 7.02.00.00
+-------------------------------------------------------------------------------------------
+
+	* Updated TOC for WoW
+	* Re-released under Creative Commons Attribution-NonCommerical 3.0 Unported license
+
+	  nUI is no longer author supported and is released to the public in the hopes that the
+	  community will continue to support and grow nUI in the years to come. My sincere 
+	  thanks to everyone over the years who have helped make nUI what it is (was).
+
+-------------------------------------------------------------------------------------------
+Version 7.00.03.03 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed Ticket #25 - Demon Hunter HUD alpha settings (with thanks to Hayleqwyn)
+	* Fixed Ticket #23 - Not seeing power bars
+	* Fixed Ticket #20 - Rogue Combo Points bug 
+	* Fixed Ticket #19 - Lua Error Before Ultraxion Encounter
+	* Fixed Ticket #18 - Buffs Cannot be removed by right-clicking them
+    * Fixed Ticket #13 - nUI 7.00.03.01 - Green textures, nUI movers
+	* Fixed Ticket #12 - Death Knight rune CDs not displaying
+
+	Enhancements...
+
+	Changed pet battle frames to replace unit frames and top bar
+	Added XP erratta to the nUI saved variables file
+	Added Zone Ability Frame to nUI movers
+
+	Known issues...
+
+	* Ticket #30 - Character levels go higher than max level in Unit Frames Defect
+	* Ticket #28 - minimap button bag tooltip of call hall reports not click away
+	* Ticket #27 - Chatting through upper chatline
+	* Ticket #26 - action button for a folloer with Legion 
+	* Ticket #21 - Disappearing textures on the edge of screen.
+	* Ticket #15 - NUI+ FPS Crash
+	* Ticket #14 - NUI + Dugi Guides
+	* Ticket #13 - nUI 7.00.03.01 - XP to next level
+	* Ticket #11 - Problem with the Veiwport 
+
+-------------------------------------------------------------------------------------------
+Version 7.00.03.02 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed Ticket #9 - ..\AddOns\nUI\Bars\nUI_XPBar.lua line 267: attempt to compare nil with number 
+	* Fixed Ticket #10 - LUA Error - happens in firelands
+	* Fixed Ticket #13 - nUI 7.00.03.01 - resource bar percentages, partial XP to level fix, tooltips fixed
+	* Fixed WarlockPowerFrame_OnUpdate error
+
+	Known issues...
+
+	* Ticket #15 - NUI+ FPS Crash -- investigating
+	* Ticket #14 - NUI + Dugi Guides  -- still have not gotten to look at this
+	* Ticket #13 - nUI 7.00.03.01 - Issues -- nUI movers are green and opaque rather than transparent red
+	* Ticket #13 - nUI 7.00.03.01 - Issues -- XP to level unknown for 101 to 110 -- player input needed
+	* Ticket #12 - Death Knight rune CDs not displaying  -- Working this issue, but still unresolved
+	* Ticket #11 - Problem with the Viewport -- still have not gotten to look at this
+	
+	Things that can't/won't be fixed anytime soon...
+
+	* Ticket #10 -- Memory leak -- it's not a memory leak... it's how nUI and garbage collection work
+	* Ticket #8 -- AddOn nUI attempted to call a protected function  -- taint is a huge problem in nUI5, no easy fix for that
+
+-------------------------------------------------------------------------------------------
+Version 7.00.03.01 (Release)
+-------------------------------------------------------------------------------------------
+
+	With thanks to Tina and Dave for making these happen...
+
+	* Death Knight Rune loop change as now flexible number between 1 and 7
+	* Removal of BNConversation related objects as they no longer exist
+	* Various changes in view of Death Knight Rune changes
+	* Various Changes to utilise the additional power types
+	* HUD power bar now changes based on active power type	
+	* Set up nUI_DefaultConfig.BarColors.PowerIDs to convert powerType to nUI powerNames
+	* Changes to reflect new classes
+	* Change CooldownFrame_SetTimer to CooldownFrame_Set 
+
+	Known issues...
+
+	* fix power bar in unit frame to work similar to hud
+	* fix ObjectiveTrackerFrame mover
+	* Max XP Level Numbers 101 to 110
+
+-------------------------------------------------------------------------------------------
+Version 7.00.00.00 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Updated TOC for Legion 7.0 Expansion
+
+-------------------------------------------------------------------------------------------
+Version 6.02.00 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Updated TOC for Patch 6.2
+
+-------------------------------------------------------------------------------------------
+Version 6.01.00 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Updated TOC for Patch 6.1
+
+	* Fixed buttons in objective frame so they don't throw taint anymore
+
+	* Added XP to level for levels 1-100 (special thanks to Ross, Andreas, and an anonymous 
+	  individual, in particular, who provided a large number of these)
+
+	* Added digsite progress bar to nUI movers
+
+	KNOWN ISSUES: 
+
+	* The Skada info panel has been intentionally disabled until Skada and nUI can play
+	  nice together. Skada is throwing errors that are breaking nUI.
+
+------------------------------------------------------------------------------------------
+Version 6.00.02 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Added correct XP to level for level 98, 100.
+	* Fixed a slew of changes to return and argument boolean values (1/0/nil to true/false)
+	* Fixed changes to return values on Spell table info functions
+	* Fixed a game breaker bug for weapon enchants when applying fishing lures
+	* Removed extraneous debug print message (for the ObjectiveTrackerFrame)
+	* nUI and Skada are not playing nice. For the time being, I have turned off the skada 
+	  info panel
+
+-------------------------------------------------------------------------------------------
+Version 6.00.01 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed XP bar to not throw errors on Beta realms. 
+	* Fixed XP to level 91-97 (thank you Roland)
+
+	NOTE: XP to level 1-90 and 98-100 are still incorrect values for the 6.0 patch. Copy & 
+	      paste the following command into chat for any of the missing levels and e-mail
+		  the result to me at kscottpiel@gmail.com - I will include them in the next update
+
+/script print((UnitXPMax("player") or "nil").." XP at level "..(UnitLevel("player")  or "nil"));
+
+-------------------------------------------------------------------------------------------
+Version 6.00.00 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Ported to Warlords of Draenor (WoD) Expansion (6.0.1)
+	* Fixed new ObjectiveTrackerFrame
+	* Fixed action bars, out of range, out of mana and usable indication
+	* Fixed cooldown and spell duration timers
+
+-------------------------------------------------------------------------------------------
+Version 5.07.43 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Added Latin American Spanish localization (thank you Daniel)
+
+	* Fixed missing slash command localization entry for the Boomkin bar in all languages 
+	  
+	  I need translations done for these two phrases in Spanish, German, French, Korean,
+	  Russian, Traditional Chinese and Simplified Chinese if anyone cares to provide them:
+
+		command = boomkin
+
+		desc    = nUI does not use a dedicated Boomkin bar by default, using that bar for 
+		          the action bar at the bottom right of the dashboard instead. The '/nui 
+				  bar boomkin' will toggle the use of the bottom right action bar on and 
+				  off as a dedicated bar for your boomkin.
+
+		message = nUI: the dedicated Boomkin action bar has been %s // (enabled or disabled)
+
+
+-------------------------------------------------------------------------------------------
+Version 5.07.42 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed nUI integration with Skada (thank you Xrystal)
+
+-------------------------------------------------------------------------------------------
+Version 5.07.41 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed problem with Pilgrim's Bounty and other special action bars (thanks Xrystal)
+	* fixed micro-menu positioning bug introduced in the 5.4.2 patch
+
+-------------------------------------------------------------------------------------------
+Version 5.07.40 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed startup error trying to set cVar
+
+-------------------------------------------------------------------------------------------
+Version 5.07.39 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Undid watch frame changes -- allows watch frame to be moved again, but reintroduces
+	  some taint issues. It's a no-win. Hopefully there will be less issues with the taint
+	  than there was with the location of the frame. /sigh
+
+	* Fixed the micro buttons getting stepped on when entering/leaving pet battles
+
+-------------------------------------------------------------------------------------------
+Version 5.07.38 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Restored missing font files
+	* Multiple taint fixes
+	* Fixed unit frame right-click menu taint bug (could not set focus previously)
+	* Fixed error when trying to unlearn talents or change glyphs (thanks Foxlit)
+	* Added fix for "otherHealPrediction" nil error in FrameXML\UnitFrame.lua (thanks Seer)
+
+-------------------------------------------------------------------------------------------
+Version 5.07.37 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed bug in main action bar when extra action button is displayed (thanks Xrystal)
+	* Fixed location of pet name in party and raid unit frame panels (thanks Xrystal)
+	* Hopefully fixed a combat taint error when mousing over unit auras (thanks Belechannas)
+	* Fixed false reporting of interruptable channel spells (thanks Belechannas)
+	* Added support for flyout spells (i.e. Shaman) to cooldowns (thanks Belechannas)
+
+	Of particular note to Druids... the bottom right action bar is no longer used as a
+	dedicated bar for your Boomkin form. Instead, by default, the Boomkin form will use 
+	your main caster bar and the bottom right bar on the dashboard can be used for other
+	things now. If you prefer to have a separate, dedicated, bar you can use for your
+	Boomkin, you can use the command '/nui bar boomkin' to toggle this behavior on/off.
+
+-------------------------------------------------------------------------------------------
+Version 5.07.36 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Try again... fat fingered files in 5.07.35
+
+-------------------------------------------------------------------------------------------
+Version 5.07.35 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed XP to level 85-90
+
+-------------------------------------------------------------------------------------------
+Version 5.07.34 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Updated TOC for 5.4 patch
+	* Fixed action bars for last boss in Draktharon Keep (thank you Xrystal!)
+	* Fixed fonts (I think) for 5.4 changes (what happened to GameFontNormal?)
+
+-------------------------------------------------------------------------------------------
+Version 5.07.33 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed XP required to level 85-90
+
+	* Added support for cooldowns on passive spells that implement them
+
+	* Added '/nui boomkinbar' to enable/disable the use of a special bar for boomkins. The
+	  default behavior is for the boomkin form to have its own bar just as it does in the
+	  Blizz interface. When this command is used, it will toggle the boomkin bar on/off so
+	  that when it is disabled, the Boomkin form will use the same bar as the default Druid
+	  caster bar (page 1). When the boomkin bar is disabled, the lower right bar in the nUI
+	  interface will not conflict with the Boomkin form's main bar.
+
+-------------------------------------------------------------------------------------------
+Version 5.07.32 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Updated TOC for 5.3 patch (this time I mean it! ~lol~)
+
+-------------------------------------------------------------------------------------------
+Version 5.07.31 (Release)
+-------------------------------------------------------------------------------------------
+
+	* TOC Bump for 5.3 patch
+	* Fixed login error thrown in location display
+
+-------------------------------------------------------------------------------------------
+Version 5.07.30 (Release)
+-------------------------------------------------------------------------------------------
+
+	* TOC Bump for 5.2 patch
+
+-------------------------------------------------------------------------------------------
+Version 5.07.29 (Release)
+-------------------------------------------------------------------------------------------
+
+    * Updates TOC for the WoW 5.1 Patch
+
+    * Fixed an error in the nUI_Buttons script throwing errors comparing a string to a number
+
+-------------------------------------------------------------------------------------------
+Version 5.07.28 (Release)
+-------------------------------------------------------------------------------------------
+
+    * This release fixes an error in the action bars where the main action bar was hidden
+       when the extra action button was displayed
+
+-------------------------------------------------------------------------------------------
+Version 5.07.27 (Release)
+-------------------------------------------------------------------------------------------
+
+    * Fixes action bars for vehicles and extra action button
+
+-------------------------------------------------------------------------------------------
+Version 5.07.26 (Release)
+-------------------------------------------------------------------------------------------
+
+    * When configuring which unitpanel layout to display include a test for group size to make sure it doesn't default to raid10 rather than party if you have 5 or less people.
+
+    * Added the new status tests for extrabar and overridebar to the registerstatedriver statement. Ultraxion fights should now work great.  Finally.
+
+    * Removed extrabar from the registerstatedriver statement as it has to exist alongside the main action bar.
+
+    * Removed redundant file path for texture icons in button bag to remove green boxes.
+
+-------------------------------------------------------------------------------------------
+Version 5.07.25 (Release)
+-------------------------------------------------------------------------------------------
+
+	* YA compilation of all of Xrystal's fixes for the WoW 5.0.4 patch.
+
+-------------------------------------------------------------------------------------------
+Version 5.07.24 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Yet another pass at trying to fix the PlayerPowerBarAlt and ExtraACtionBarFrame
+	  sure would be easier if I could test them myself ~frown~ Me thinks I need to grind
+	  a toon in all my copious free time (cough cough)
+	  
+	* Fixed the missing group loot windows #3 & #4
+	  
+-------------------------------------------------------------------------------------------
+Version 5.07.23 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed version number in-game (oops)
+	
+	* Applies the nUI_Button.lua fix from Belechannas (thank you for that) to address the
+	  cooldown timer problem since the 4.3 patch
+	  
+	* Modified nUI_Movers (again) to try and fix PlayerPowerBarAlt and ExtraActionBarFrame
+	  for the Atrameded and similar fights
+	
+-------------------------------------------------------------------------------------------
+Version 5.07.22 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Updated TOC for 4.3 patch
+	
+	* Changed how movers are initialized to allow easy addition of new Blizz elements
+	  (incorporating part of what Xrystal did in "nUI : Plugin [Custom Movers]" 
+	  
+	  NOTE: nUI will (should) automatically disable nUI_Plugin_CustomMovers if it is 
+	        installed so the two apps don't confict. However, if you have it installed
+	        it is recommended you remove it as it is no longer needed.
+	  
+	* Added PlayerPowerBarAlt, TutorialFrameAlertButton and ExtraActionBarFrame to the
+	  new movers definitions
+	  
+	* Incorporated Xrystal's nUI_UnitPower fix for the divide by zero error when mousing
+	  over other players
+	  
+-------------------------------------------------------------------------------------------
+Version 5.07.21 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Added '/nui viewport' command to allow the viewport to be toggled on and off so the
+	  viewport can be enabled most of the time (thus increasing viewable world space and
+	  centering the player/HUD on the viewable area) and disabled when in the WoW zones
+	  where viewports are broken (such as Throne of Tides) -- the viewport cannot be
+	  toggled unless you are out of combat
+	  
+	* Moved the initialization of key bindings from the PLAYER_ENTERING_WORLD event to the
+	  VARIABLES_LOADED event because it is now possible to enter the world before variables 
+	  are loaded and ready for interpretation (sigh).
+	  
+	* Changed the anchoring the special class bars (Eclipse, Shard, Holy Power) so they do
+	  not depend on the nUI HUD casting bar being present.
+	  
+	* Added error trap to catch bad return values from GetCurrentBindingSet() that caused
+	  the key binding function to break in nUI
+	  
+	* Fixed a layering problem in the combat log that allowed the combat log text to hide
+	  the combat log filtering buttons
+	  
+	* Fixed an error in the combat log that threw an error if you tried to click in the 
+	  combat log text area (it was trying to open a chat edit box where there isn't one)
+	  
+	* Disabled the minimimze function on the combat log -- it doesn't need minimizing in
+	  the info panel and was throwing errors because it was looking for a chat edit box
+	  that doesn't exist in the combat log
+	  
+	* Fixed the errant display of the button bar to the left of the combat log that was
+	  overlapping some of the buttons on the action bar right of the unit frames
+	  
+	* Moved new user tooltips alert button to right side of game field above the voice
+	  chat control box so it doesn't overlap the minimap anymore
+	  
+-------------------------------------------------------------------------------------------
+Version 5.07.20 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Updated for 4.2 patch
+	
+	* Fixed keyring in bag bar (removed in 4.2)
+	
+	* Fixed sizing of the latency and frame rate meters for extra button in 4.2 patch
+	
+	* Fixed the target auras in the simple HUD to make them non-clickable so they do not
+	  interfere with the mouse
+	  
+	* Modified automatic faction tracking to ignore guild reputation changes
+	
+	* Fixed location of map coordinates when world map is not maximized
+	
+-------------------------------------------------------------------------------------------
+Version 5.07.19 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed the bag bar so tooltips don't appear and the mouse does not interact with the
+	  bar when the '/nui bagbar off' option is used
+	  
+	* Fixed the upper console that so that other mods that modify the micro menu and other
+	  elements cannot "show" the elements when the '/nui console off' option is used... 
+	  this was causing elements to be mouse active, with tooltips, when they were hidden
+	  
+	* Fixed a scaling error in the Battlefield Minimap info panel
+	
+	* Fixed a logic error in the raid sort that was duplicating some units and not showing
+	  other units
+	
+-------------------------------------------------------------------------------------------
+Version 5.07.18 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed debug print messages appearing when a unit frame is right-clicked
+	
+-------------------------------------------------------------------------------------------
+Version 5.07.17 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Updated TOC for WoW 4.1 patch
+	
+	* Removed happiness icon from pet unit frames (hunter's no longer need to manage it)
+	
+	* Fixed right-click menu on unit frames with raid sort
+	
+-------------------------------------------------------------------------------------------
+Version 5.07.16 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed aura layout error in the party and raid panels that caused auras to overlap
+	  the upper action bars (different problem than the one fixed in 5.07.15)
+	  
+	* Fixed layering problem in unit frame and HUD aura buttons that caused them to 
+	  interfere with the mouse when targeting/clicking
+	  
+-------------------------------------------------------------------------------------------
+Version 5.07.15 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed a sizing problem in the aura frames
+	
+	* With auras working in a more sane manner now, the maximum number of auras displayed
+	  for the player and pet buffs has been increased to ensure visibility.
+	
+	* Fixed an error in the combat feedback system that was causing the unit frames to
+	  flash red on incoming heals
+	  
+	* Fixed an issue that caused hidden default Blizzard UI elements to briefly appear 
+	  while in combat
+	  
+	* Attempted to fix raid sorting (only works out of combat)
+	
+-------------------------------------------------------------------------------------------
+Version 5.07.14 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Another pass at resolving the issues with aura displays... modified player, target,
+	  pet and vehicle auras to build from the bottom up to eliminate floating auras
+	  
+	* Fixed tooltips on target debuff (help) auras
+	
+	* Fixed aura overlap from unit frames over action bars
+	  
+-------------------------------------------------------------------------------------------
+Version 5.07.13 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Redied for 4.1 patch
+	
+	* Restored the viewport function
+	
+	* Fixed animated player portrait display
+	
+	* Fixed XP points to level for experience bar and rested XP thorugh level 85
+	
+	* Modified aura displays to support '/nui maxauras' correctly
+	
+	* Modified default UI element hiding method to reduce taint
+	
+	* Fixed display of pet bar and possession bar while in combat
+	
+	* Fixed display of tooltips on player and pet debuffs, as well as target and ToT 
+	  buffs, in the HUD
+	  
+	* Fixed HOT/DOT bar display overlapping cooldown bar in the HUD
+	
+	* Moved the location of the guild instance difficulty flag so it does not overlap the
+	  tracking button on the minimap.
+	  
+-------------------------------------------------------------------------------------------
+Version 5.07.12 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Modified aura logic to try to eliminate problems with auras not updating in combat
+	  and overlapping the chat frame, etc. 
+	  
+-------------------------------------------------------------------------------------------
+Version 5.07.11 (Release)
+-------------------------------------------------------------------------------------------
+
+	* More fixes for the 4.0.6 patch
+	
+	* Removed management of the PlayerTalentFrame in order to work around a new taint
+	  added in the 4.0.6 patch in the Blizzard_TalentUI
+	  
+	* Fixed a mousever tooltip error on the frame rate and latency bars
+	
+	* Fixed the player glyph system error
+	
+-------------------------------------------------------------------------------------------
+Version 5.07.10 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Patched nUI for WoW 4.0.6
+	
+	* Fixed a compatibility problem with the Blizzard_TalentUI throwing an error at login
+	
+	* Fixed anchoring of Titan Panel with nUI dashboard and console
+	
+	* Fixed a tooltip bug in nUI_UnitAura module ( thank you Belechannas)
+	
+-------------------------------------------------------------------------------------------
+Version 5.07.09 (Release) -- EBF
+-------------------------------------------------------------------------------------------
+
+	* This EBF fixes the experience bar for Cataclysm levels 81 to 85
+	
+-------------------------------------------------------------------------------------------
+Version 5.07.08 (Release) -- EBF
+-------------------------------------------------------------------------------------------
+
+	* This is an emergency bug fix -- it once again removes the viewport function from
+	  the addon as the Blizz graphics bug appears to still be there, particularly on Macs
+	  
+	* Made sure the nUI_UnitAuras fixes from Damian made it into this release
+	
+-------------------------------------------------------------------------------------------
+Version 5.07.07 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed runtime conflict with FuBar2Broker that caused the FuBar integration to
+	  thrown an error on login
+	  
+	* Added support for the Pally Holy Power Bar, Warlock Shards and Boomkin Eclipse bar
+	  with thanks to Xrystal as always for her constant diligence in making nUI better.
+	  
+	* Modified auras to allow cancellation -- with thanks to Damian for the nUI_UnitAura
+	  edits... much appreciated.
+	  
+	* Restored viewport functionality
+	
+	* Undid modification of the HUD due to the lack of viewport previously
+	  
+-------------------------------------------------------------------------------------------
+Version 5.07.06 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Fixed a logic error that reported all party members as being the tank
+	
+	* Fixed Bazooka integration
+	
+	* Fixed minimap button layering to ensure buttons are not overlapped by the minimap
+	
+	* Fixed '/nui anim' slash command functionality
+	
+	* Fixed compatibility issue with WIM (default chat frame edit box overlapping action bar)
+	
+-------------------------------------------------------------------------------------------
+Version 5.07.05 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Fixed a bug in the right-click menu feature for unit frames
+	
+	* Disabled talent inspection system until Blizzard fixes paper doll frame bug
+	
+	* Moved center location of HUD to account for changed viewport and eliminate the HUD
+	  overlapping the action bars
+	  
+	* Fixed minimap mousewheel scrolling bug
+	
+	* Fixed Skada information panel integration
+	
+-------------------------------------------------------------------------------------------
+Version 5.07.04 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Removed viewport from WorldFrame due to a Blizzard bug in the rendering of reflections
+	  in the water and the position of the sky when the viewport is modified. This change
+	  will cause the player character to appear lower in the world frame than it did in
+	  earlier versions of nUI... the viewport will be restored when Blizzard fixes the bug
+
+	* Fixed range to target calculation
+	
+	* Fixed the hunter pet feeder
+	
+	* Fixed display of spell durations on action bars
+	
+	* Fixed display of cooldown counters on action bars
+		  
+-------------------------------------------------------------------------------------------
+Version 5.07.03 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Development version of nUI for WoW 4.0 -- functionally the same as 5.07.02 (PTR Beta)
+	
+-------------------------------------------------------------------------------------------
+Version 5.07.02 (PTR Beta)
+-------------------------------------------------------------------------------------------
+
+	* Fixed nil number comparison bug in chat frame mousewheel scroll function
+	
+	* Added WIM to list of recognized chat frame addons that disable nUI's chat frame mods
+	
+	* Fixed missing guild button on micro menu
+	
+-------------------------------------------------------------------------------------------
+Version 5.07.01 (PTR Beta)
+-------------------------------------------------------------------------------------------
+
+	* Fixed display of talent spec in unit frame tooltips
+	
+	* Fixed display of the pet bar 
+	
+-------------------------------------------------------------------------------------------
+Version 5.07.00 (PTR Beta)
+-------------------------------------------------------------------------------------------
+
+	* Ported 5.06 to the WoW 4.0 PTR
+	
+-------------------------------------------------------------------------------------------
+Version 5.06.30
+-------------------------------------------------------------------------------------------
+
+	* Fixed a layering problem in the chat edit box that prevented the box from being
+	  shown when using the "Classic Style" chat frames and trying to enter a message in a
+	  frame other than the default chat frame
+	  
+	* Fixed compatibility problems with Chatter and Prat that caused an error to be thrown
+	  when they tried to anchor the chat menu button
+	  
+	* Fixed an event logic error that caused the extra chat frame tabs for some players
+	  to not be displayed when first logging in (requiring a '/nui rl' to fix)
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.29
+-------------------------------------------------------------------------------------------
+
+	* Fixed the RealID converation chat frames to anchor correctly to the dashboard when
+	  they are created
+	  
+	* Fixed display of the scroll buttons and add friend button in the ReadID converation
+	  chat frames
+	  
+	* Fixed a chat frame layering problem that caused all buttons for all docked frames
+	  to display when the mouse was over the frame versus only the buttons for the visible
+	  chat frame
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.28
+-------------------------------------------------------------------------------------------
+
+	* Fixed a loader error that caused the management of the watch frame to fail if the
+	  watch frame was not initialized before the PLAYER_LOGIN event
+	  
+	* Changed info panel load sequence to execute off PLAYER_ENTERING_WORLD versus
+	  PLAYER_LOGIN to ensure WoW UI elements and addons are properly initialized
+	  
+	* Modified info panel exception handler to preserve stack trace for debugging
+	
+	* Added the conversation button to the list of managed chat frame buttons
+	
+	* Modified size and location of edit frame chat box to ensure is does not overlap 
+	  chat frame controls
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.27
+-------------------------------------------------------------------------------------------
+
+	* Fixed chat frame integration so that when a new chat window is created, it is 
+	  correctly anchored and sized including the layering and position of the edit box.
+	  This should correct issues with both BNet and whisper frames as well as the auto-
+	  join guild recruitment channel.
+	  
+	* Changed chat frame edit box layering to try and ensure the edit box is always 
+	  layered highey than the chat frame itself (this cannot account for any changes a
+	  chat addon may make)
+	  
+	* Changed info panel initialization to occur at PLAYER_ENTERING_WORLD event rather than
+	  the PLAYER_LOGIN event to ensure integrated addons have had time to initialize 
+	  properly. This change addresses a problem in starting Skada for some users.
+	  
+	* Added exception handling to the nUI_InfoPanel engine so that broken info panel plugins
+	  will not cause the nUI load itself to break (a la the 3.3.5 patch nightmare)
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.26
+-------------------------------------------------------------------------------------------
+
+	* Fixed a bug in the nUI_InfoPanel_CombatLog that tried to hide the minimize button
+	  when it may not actually exist and threw a RegisterStateDriver error
+	  
+	* Moved the button frame in the chat frames to make sure it does not overlap the
+	  resize widget in the bottom right corner of the chat frame
+	  
+	* Fixed a logic error in nUI_InfoPanel_Skada that caused the infomation panel loader
+	  to create a panel for Skada even when Skada was not installed or was disabled
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.25
+-------------------------------------------------------------------------------------------
+
+	* Hot fix... the Skada fix works if you have Skada installed, but breaks if Skada is
+	  not installed... gee... guess I should have tested that the fixes didn't break 
+	  anything when Skada wasn't present, huh? /sigh
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.24
+-------------------------------------------------------------------------------------------
+
+	* Added a backdrop to the chat frame edit box to provide a clean overlay for the
+	  background text and hid the default frame so it does not interfere with the background
+	  text when not entering new chat text.
+	  
+	* Moved the chat frame edit box up to waste a bit less space at the top of the frame.
+	
+	* Removed nUI's manipulation of the chat frame font size so the font size is set by
+	  the new chat settings menu
+	  
+	* Fixed loader logic error in the nUI_InfoPanel_Skada module so Skada integrates with
+	  nUI again by default.
+	  
+	* Added setting of the buttonSide value in each chat frame to prevent BNet from throwing
+	  errors when a realID friend logs off
+	  
+	* Fixed the layout of chat tabs if you have more than three chat frames anchored to 
+	  the default chat frame.
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.23
+-------------------------------------------------------------------------------------------
+
+	* Fixed an error thrown when a member of your RealID friend list logs in
+	
+	* Fixed a "Frame is not movable" error thrown when you have extra chat frames enabled
+	
+	* Fixed anchoring of chat edit boxes in a chat frames
+	
+	* Removed chat edit box from combat log
+	
+-------------------------------------------------------------------------------------------
+Version 5.06.22
+-------------------------------------------------------------------------------------------
+
+	* Updated for WoW patch 3.3.5
+	
+	* Fixed loader problem with the new chat frames
+	
+-------------------------------------------------------------------------------------------
+Version 5.06.21
+-------------------------------------------------------------------------------------------
+
+	* Fixed a logic error in the nUI_Buttons module that caused spell cooldowns to not
+	  update while the spell was active on the current target if the spell duration option
+	  ( /nui bar duration ) was disabled on the action bars. 
+	
+-------------------------------------------------------------------------------------------
+Version 5.06.20
+-------------------------------------------------------------------------------------------
+
+	* Fixed a upper console anchoring issue that broke detection of FuBar and other LDB
+	  addons with top bars
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.19
+-------------------------------------------------------------------------------------------
+
+	* Fixed the location of the player and cursor coordinates in the world map when the
+	  map changes between full screen and windowed modes
+	  
+	* Fixed a problem with the nUI_Movers logic in the micro-menu bar that prevented the
+	  bar from being moved when the movers were active.
+	
+-------------------------------------------------------------------------------------------
+Version 5.06.18
+-------------------------------------------------------------------------------------------
+
+	* Added a trap to the key binding logic to prevent an error being thrown if the current
+	  binding set is undefined.
+	  
+	* Fixed a logic error in the nUI_MicroMenu module which could cause issues when trying
+	  to overload the micro menu location via a plugin.
+	  
+	* Added the ability for health, power and status bars to collapse to, and expand from,
+	  their horizontal and vertical centers. (with thanks to Belechannas)
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.17
+-------------------------------------------------------------------------------------------
+
+	* Fixed a anchoring error in the nUI_HUD module that caused the HUD selector button to
+	  be anchored to both the top center of the viewport and the top center of the micro
+	  menu which broke the '/nui movers' function for the micro menu.
+	  
+	* Fixed a logic error in the nUI_SpecialBars modules that made the mover for the pet,
+	  shapeshift and stance bars too small to see
+	  
+	* Modified nUI_ChatFrame module to not attempt to set or alter the chat frame text size
+	  if either Prat or Chatter is installed
+	  
+	* Corrected a logic error in the nUI_Button module that caused the cooldown counter to
+	  not update if the '/nui bar durations' option was used to turn off spell duration
+	  counters on the action bars
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.16
+-------------------------------------------------------------------------------------------
+
+	* Changed nUI's layout engine loader logic to key off of the ADDON_LOADED event 
+	  rather than the VARIABLES_LOADED event to solve the loader reliability issue that
+	  has been the key focus of the last several updates.
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.15
+-------------------------------------------------------------------------------------------
+
+	* Added traps to prevent passing nil numbers into CooldownFrame_StartTimer from nUI to
+	  correct a nil number comparison error in the action bars
+	  
+	* Fixed a logic error in the nUI_UnitAura module that would throw a nil table value 
+	  error if auras are detected before the module is initialized (logging in while in
+	  combat, etc.)
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.14
+-------------------------------------------------------------------------------------------
+
+	* Fixed an error in the nUI_Splash module that was throwing a nil error if the 
+	  player character's name is not available when the PLAYER_ENTERING_WORLD event fires
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.13
+-------------------------------------------------------------------------------------------
+
+	* Updated German localization (thank you Marcel)
+	
+	* Fixed an error in the nUI_UnitLabel module that threw an exception when in random
+	  dungeons or battlefields and another player's name was not yet available
+	  
+	* Fixed an error in the nUI_ChatFrame module that throws a nil reference error for
+	  some players when initializing the chat frame (thank you for running that down Xrystal)
+	  
+	* Fixed an error in nUI_MicroMenu that threw a nil anchor error for some users when
+	  loging into the game
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.12
+-------------------------------------------------------------------------------------------
+
+	* Changed logic for unit health and power to ensure all units update at the maximum
+	  rate including the new boss frames
+	  
+	* Fixed an error throwing a nil value exception in nUI_MicroMenu.lua at line 236
+	
+-------------------------------------------------------------------------------------------
+Version 5.06.11
+-------------------------------------------------------------------------------------------
+
+	* Fixed a problem with key bindings not being restored to the default Blizzad action
+	  bars on logout.
+	  
+	* I *think* this patch fixes the problem with the prompt for switching from character
+	  specific key bindings to account wide key bindings.
+	  
+	* Added the dungeon completion alert frame to nUI's movers so it does not overlap the
+	  action bars when displayed and to make it moveable.
+	  
+	* Added boss frames to nUI's unit panels -- currently located directly below the 
+	  upper console -- not the best location, but the only one that works for now.
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.10
+-------------------------------------------------------------------------------------------
+
+    * Resolved a loop in the key binding logic that caused repeating key binding notices
+      while in combat
+      
+    * I'm confident we may actually have finally fixed the key bindings not being present
+      at login issue with this release... changed how nUI's key bindings are initialized
+      and early testing among some users with the problem have shown promise.
+      
+    * Located a taint problem with key bindings causing the action bars to break while in
+      combat when changing stances, forms, stealth, etc. I do not know if this is the only
+      bug related to that problem, so it may not be fixed for everyone. We'll see.
+
+-------------------------------------------------------------------------------------------
+Version 5.06.09
+-------------------------------------------------------------------------------------------
+
+    * Modified key binding logic, yet again, in hopes of mitigating the problems further...
+      however, key bindings do remain a problem /sigh
+      
+    * Reverse key bindings for the action bars to the left and right of the unit frames to
+      match the bindings in the Blizzard interface. Not sure when VerticalMultiBar3 and
+      VerticalMultiBar4 changed places, but nUI now matches them correclty.
+
+    * Changed the initialization of the chat frame to account for a load issue in the
+      Blizzard loader causing a "attempt to perform arithmetic on a nil value" error in
+      line 214 of nUI's nUI_ChatFrame.lua code.
+         
+-------------------------------------------------------------------------------------------
+Version 5.06.08
+-------------------------------------------------------------------------------------------
+
+    * Taking a stab at fixing the key binding issues for Druids and Rogues -- I don't know
+      if this is a fix or not. Hoping it is. Feedback is requested.
+      
+    * Added the Boss Target Frames to nUI's list of managed Blizzard frames
+    
+-------------------------------------------------------------------------------------------
+Version 5.06.07
+-------------------------------------------------------------------------------------------
+
+	* Fixed an experience bar error that throws an error if you hit level 79 with enough
+	  rested XP to reach past level 80
+	  
+	* Moved the location of the dungeon difficulty flag into the location box so it does 
+	  not overlap the tracking icon on the minimap
+	  
+	* Fixed the party role indicators on the unit frames
+	
+	* Modified the size and location of the quest watch frame to make room for the quest
+	  number indicators on the left and eliminate wasted space on the right
+	
+-------------------------------------------------------------------------------------------
+Version 5.06.06 (EBF)
+-------------------------------------------------------------------------------------------
+
+	* This update is an emergency bug fix to address an error introduced into nUI_UnitRole
+	  by the addition of the new Blizzard tank/healer/damage role icons to the unit frames
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.05
+-------------------------------------------------------------------------------------------
+
+	* Added new World Map Frame to the list of movable frames
+	
+	* Modified how unit health is updated to address an issue where player, pet and/or 
+      target health bars are not always updated
+      
+	* Added the Looking for Raid and Looking for Dungeon frames to the nUI movable frames
+	
+	* Tweaked the location of the top console slightly -- moving it up to remove some of 
+	  the dead space that's been bothering me forever by that I keep putting off doing
+	  anything about ~grin~
+	  
+	* Fixed an issue that caused raid leader, tank and off-tank icons to not display
+	  on unit frames
+	  
+	* Added new Blizzard tank, healer and damage role icons to unit frames
+	
+	* Removed the new Looking For Raid/Dungeon icon out of the button bag to the top
+	  center of the minimap.
+	  
+	* Added integration of ChocolateBar in the same fashion ad Titan Panel and FuBar with 
+	  thanks to Brillynt for having done the integration work
+	  
+	* Fixed the map coordinate display in the world map to account for the new map layout
+
+	* Added detection of Prat 3.3 to the chat frame integration to fix an error being
+	  thrown when Prat 3.3 is installed with nUI
+	  
+	* Added the party member background frame to the list of Blizzard frames nUI manages
+	
+	* Fixed a bug introduced by Blizzard in Patch 3.3 where the alpha level of models is
+	  being reset to 1 when the user interface is hidden and reshown (a la open/close map
+	  and zoning, etc.) This broke the '/nui anim' option's ability to disable animation
+	  in the unit frames.
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.04
+-------------------------------------------------------------------------------------------
+
+	* Released for WoW Patch 3.3
+	
+-------------------------------------------------------------------------------------------
+Version 5.06.03 (PTR)
+-------------------------------------------------------------------------------------------
+
+	* Increased the frame strata level for the chat frame edit box to ensure that the edit
+	  box is always over the chat frame text.
+	  
+	* Added detection of Prat-3.0 to the chat frame customization to allow Prat's management
+	  of the chat frame edit box to override nUI's management.
+	  
+	* Changed how the chat frame edit box is scaled to improve readability for those who
+	  enabled the "Use UI Scale" video option and use a scale other than 1.0
+	  
+	* Removed the '/nui watchframe' command -- no longer needed with the new watch frame
+	
+	* Added the new watch frame to the nUI movers
+	
+	* Added the new Looking for Dungeons button to the micro menu
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.02 (PTR)
+-------------------------------------------------------------------------------------------
+
+	* Fixed a new error introduced in nUI_Minimap.lua resulting from a Bliz change in the 
+	  management of the minimap
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.01 (PTR)
+-------------------------------------------------------------------------------------------
+
+	* Added a color code in the casting bar (bright red) to indicate spell casts that
+	  cannot be interrupted
+	  
+-------------------------------------------------------------------------------------------
+Version 5.06.00 (PTR)
+-------------------------------------------------------------------------------------------
+
+	* First cut at the new public test realm.
+	
+	* Fixed a load error in nUI.lua referencing TargetOfTargetFrame which appears to have
+	  gone away or become optional
+	  
+	* Fixed a load error in nUI_Movers.lua with frames that do not current exist in the PTR
+	
+-------------------------------------------------------------------------------------------
+Version 5.05.03 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed a localization problem for the koKR localization which was causing a conflict
+	  with the zhTW localization.
+	  
+	* Fixed an error in nUI_UnitCasting which would throw an exception if the target was
+	  deselected between the time the casting change was flagged and the update
+	  
+-------------------------------------------------------------------------------------------
+Version 5.05.02 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Fixed an integration issue between nUI and Titan Panel where the two mods were
+	  fighting over management of the bag locations when openning bags. Note... since this
+	  patch was made, Titan has also been updated to add an option to turn off Titan's
+	  management of the bag locations via the right-click options settings in Titan.
+	  
+	* Fixed a logic error in the advanced objectives tracking management in nUI so that the
+	  tracking window is now correctly sized and located when nUI is initially installed.
+	  
+	* Added a new slash command '/nui watchframe' which allows the user to manally reset
+	  the size and location of the advanced objectives tracking frame should the location
+	  be lost or otherwise problematic. By default nUI only sets the size and location of
+	  the frame once when the player logs in on a character for the first time... after
+	  that the player and relocate the frame as they see fit. This option allows them to
+	  reset the location to the nUI default at any time after the initial login.
+	  	  
+-------------------------------------------------------------------------------------------
+Version 5.05.01 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Added a patch for integrating the default WoW 3.2 Blizzard Shaman totem bar into nUI
+	
+	* Fixed a problem with the battlefield minimap which prevented it from being included
+	  in the information panel as it should be which was caused by a new bug Blizzard
+	  introduced in the LoadAddOn() method for load on demand addons. /sigh
+	  
+	* Added a new slash command '/nui bar totems' to allow players with a Shaman to control
+	  whether or not the default Blizzard totem bar is displayed. nUI uses the default 
+	  Blizzard totem bar for Shamans. If you would prefer to use an alternate addon for 
+	  totems, the '/nui bar totems' option can be used to cause nUI to hide the default 
+	  totem bar.
+	  
+	* Fixed a few logic errors in nUI_Movers.lua which were causing some taint issues.
+	
+-------------------------------------------------------------------------------------------
+Version 5.05.00 (Release)
+-------------------------------------------------------------------------------------------
+
+	* Updated the TOC for WoW patch 3.2
+	
+-------------------------------------------------------------------------------------------
+Version 5.04.00 (Release)
+-------------------------------------------------------------------------------------------
+
+	* This is an release cut of nUI as of development version 5.03.13
+	
+-------------------------------------------------------------------------------------------
+Version 5.03.13 (Development)
+-------------------------------------------------------------------------------------------
+
+	* This update fixes a problem with fonts for nUI users who are using the Russian 
+	  localization file.
+	  
+-------------------------------------------------------------------------------------------
+Version 5.03.12 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Updated Spanish localization file (thank you Jose)
+
+	* Added new font options to improve readability. Still need to add a GUI panel for the
+	  player to use to change fonts in-game. For now, see the appropriate localization file
+	  in [ Interface > Addons > nUI > Main ]
+	
+	* Added a new feature to the action bars... when you have an active target, or you are
+	  in combat, any button on your action bar which is unusable, is on cooldown or is 
+	  active on the target is dimmed to indicate that is cannot be cast at present, or does
+	  not need to be cast. Any spell which can be cast, is not in cooldown and is not active
+	  on the target (or yourself) is displayed at full brightness. This acts as a quick
+	  visual cue as to which actions you should/could be using at present.
+	  
+	* Added a new slash command '/nui bar dimming' to toggle the new action button dimming
+	  feature on and off.
+	  
+	* Added a new slash command '/nui bar dimalpha {n}' which allows the player to set a 
+	  custom alpha level for action buttons that are currently dimmed. The default is 30%
+	  or '/nui bar dimalpha 0.30' -- valid values are 0 < {n} <= 1 where 0 is fully
+	  transparent and 1 is fully opaque (the same as turning off the dimming feature). 
+	  Note that you cannot use an opactity of 0 as that does have special meaning to the
+	  action button logic.
+	  
+	* Fixed a logic error in nUI_StatusBar which threw an error when the bar was oriented
+	  to grow from the top down
+	  
+	* Added tick tracking to the health and power bars to visually indicate how much health
+	  and/or power was gained or lost since the last bar update.
+	  
+	* Added a new slash command '/nui bar mouseover' which when active causes nUI's action
+	  bars to be hidden unless and until you mouse over them.
+	
+	* Tweaked nUI_Button module to correct an issue showing the Pally judgment spells on
+	  the action buttons correctly. 
+	  	
+-------------------------------------------------------------------------------------------
+Version 5.03.11 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Fixed a taint error caused by opening the world map while in combat
+	
+	* Replaced the nUI button bag button icon with the nUI logo
+	
+	* Fixed cooldown graphic on Death Knight runes
+	
+	* Moved cooldown timers on DK runes and modified rune transparency on cooldown to
+	  improve visibility of the type of rune on cooldown
+	  
+	* Fixed a logic error on DK runes that displayed all of the cooldown timers on the 
+	  first rune in the bar if timers are disabled.
+	  
+	* Fixed an error in the nUI_Button module which threw an exception in UnitIsUnit while
+	  in a battleground
+	  
+	* Fixed an addon configuration error which caused the nUI load to log errors in the
+	  FrameXML log "Unknown frame type: Binding"
+	  
+	* Fixed an addon configuration error which caused nUI's bindings to not function as
+	  expected on systems that use case sensitive file names
+	  
+-------------------------------------------------------------------------------------------
+Version 5.03.10 (Development)
+-------------------------------------------------------------------------------------------
+
+	* We're on a roll tonight /sigh -- another EBF for the new trinket code
+	
+-------------------------------------------------------------------------------------------
+Version 5.03.09 (Development)
+-------------------------------------------------------------------------------------------
+
+	* This is an EBF to fix a typo in the new trinket cooldown entries in the cooldown bar.
+	
+-------------------------------------------------------------------------------------------
+Version 5.03.08 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Added cooldowns for usable equipped items to the cooldown bar (trinkets, etc.)
+	
+	* Enhanced action bar counters to use strong color cues to compress information. When
+	  the player has a spell cast (HOT or DOT) on a target and that spell is still on
+	  cooldown, the time remaining on the *spell* (not the cooldown) is displayed in
+	  purple. Once the cooldown expires, or if there is no cooldown, the time remaining
+	  on the *spell* is displayed in bright blue (cyan). If the spell is on cooldown but
+	  is not currently active on the target, the cooldown time remaining is displayed in
+	  yellow until the last ten seconds of the cooldown when it shows in red. A visual
+	  explanation of the color scheme can be found at nUI's support forum...
+	  
+	  http://www.wowinterface.com/forums/showpost.php?p=141448&postcount=16
+	
+	* Fixed a tooltip error in the nUI_PetFeeder module which caused all of the food items
+	  in the feeder window to display the same tooltip.
+	  
+	* added a new slash command '/nui bar cooldown' -- This option is used to turn the 
+	  display of cooldowns (displayed in yellow on the action bar) on and off. By default 
+	  this feature is enabled.
+
+	* added a new slash command '/nui bar duration' -- By default, when you cast a spell 
+	  on a target, the time remaining on the spell is displayed in blue on the action bar. 
+	  This option turns that timer feature off.
+
+	* added a new slash command '/nui bar macro' -- When you place a custom macro on the 
+	  action bar, nUI display's the macro's name on the button. This option will turn that 
+	  display on and off.
+
+	* added a new slash command '/nui bar stackcount' -- nUI normally displays the stack 
+	  counts of inventory items that are on your action bars in the lower right corner of 
+	  the button. This option can be used to turn that display on and off.
+
+	* added a new slash command '/nui bar keybind' -- When you have a key bound to an 
+	  action button, the key name is normally displayed in the top left corner of the 
+	  button. This option can be used to turn that display on and off.
+
+	* Fixed an error in nUI_Button.lua which threw an exception trying to compare a string
+	  with a number on some characters at login.
+	  
+	* Removed the health and power text values from the simple HUD that were accidentally
+	  left there in the 5.03.07 release.
+	  
+-------------------------------------------------------------------------------------------
+Version 5.03.07 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Modified the tooltip change made in 5.03.06 as it was conflicting with most tooltip
+	  addons and causing the tooltips to "jump" between locations -- this should be fixed
+	  
+	* Made some changes in the nUI_Button.lua module to try and fix a bug introduced in
+	  5.03.06 which was causing "invalid spell slot" errors and causing UnitIsUnit() to
+	  throw invalid unit ID errors.
+	  
+	* Fixed a bug in nUI_Button.lua where it would throw and exception of (for some who
+	  knows what reason) an aura on the target didn't have an ID for who cast the aura
+	  
+	* Updated the Russian localization file (with thanks to StingerSoft)
+	  
+-------------------------------------------------------------------------------------------
+Version 5.03.06 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Added HOT and DOT timers to the action bars. Cooldowns are now displayed in yellow
+	  until the last 10 seconds of the cooldown, then the become red, as before. However,
+	  regardless of whether or not there's a cooldown on the action, if the spell associated
+	  with the action button is active on the current target, the time remaining before 
+	  the spell expires is displayed in bright blue (cyan) counting down to zero.
+	  
+	* Added a new slash command '/nui hud cdmin {n}' which sets the minimum amount of time 
+	  required for a spell to be displayed on the cooldown bar when it first begins the 
+	  cooldown. If the initial cooldown period is less than {n}, it won't display. The 
+	  default value is '/nui hud cdmin 2'
+	  
+	* Fixed an error in the pet feeder which would throw an exception if you had more than
+	  one stack of the same food in your bags when you tried to open the feed pet window
+	  
+	* Fixed a German localization error where a "DEAD" player was reported as "TOD" (DEATH)
+	  instead of "TOT" (DEAD)
+	  
+	* Removed the healthrace bar from the Player/Target and Health/Power HUD modes since it
+	  is largely redundant in those applications.
+	  
+	* Added raid target icon to the "Simple HUD" mode -- located bottom center just above the
+	  healthrace bar
+	  
+	* Added player and target debuffs to the "Simple HUD" mode -- located to the left and
+	  right of the health race bar.
+	  
+	* Fixed a logic error in the new event engine in nUI_UnitPvP which causes the PvP flag
+	  not to be removed from the unit frame once it has been displayed regardless of whether
+	  or not the unit is still flagged for PvP
+	  
+	* Added enhanced unit information to the mouseover unit tooltip
+	
+	* Added unit's target to the tooltip for all unit frames
+	
+	* Added coloring of unit's health and power values in the unit frame tooltips according
+	  to the same color using in their health bars for a quick visual indication of their
+	  overall health/power
+	  
+	* Fixed a logic error in the new event engine for nUI_UnitFeedback which was preventing
+	  the hit/heal indicators and some other feedback features from functioning as designed
+	  
+	* Added a trap for an odd error in obtaining the current threat situation on a unit in
+	  nUI_UnitFeedback that threw an error if you dropped target in the 1/30th of a second
+	  (or less) between when the feedback update was initiated and when the threat check
+	  was performed.
+	  
+-------------------------------------------------------------------------------------------
+Version 5.03.05 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Fixed a logic error in nUI_UnitRaidSort which would cause the raid sort to fail and
+	  never execute if the raid roster changed while in combat lockdown. This should also
+	  address an unreported taint bug, as well.
+	  
+	* Added an option to sort raids by player name as well as group, class or unit id.
+	
+	* Added the voice chat frame to nUI's list of managed frames. The default location for
+	  the frame has been set immediately above the vehicle seat indicator on the right edge
+	  of the user display, slightly above center.
+	  
+	* Fixed combo point display for druis in cat form
+	
+	* Fixed combo point display for vehicles that use combo points in the actions
+	
+	* Fixed a tooltip error in nUI_UnitPvP that either showed an empty tooltip or threw
+	  and error when the cursor moved over the PvP icon in the unit frame.
+	
+	* Fixed an error with the advanced objectives watch frame which broke the frame when
+	  nUI management of the minimap is enabled. 
+	  
+	* Moved the default location of the advanced objectives watch frame to the upper left
+	  of the user interface. nUI will only locate the watch frame the first time the user
+	  logs in on each character... the frame can then be permanently moved using the built
+	  in lock/unlock and mouseover features of the frame. Note: If game settings are not
+	  being maintained on each character individually, you may need to log in on all of
+	  your characters before attempting to set a permanent location for the frame other 
+	  than the nUI default.
+	  
+	* Fixed a logic error in the '/nui calendar' slash command that caused it to fail to
+	  work as expected the first time the player uses the command.
+	  
+	* Moved the calendar to the bottom of the minimap and modified its size slightly to
+	  avoid conflict with the action bars and to improve the calendar's visibility when
+	  the '/nui calendar' option is used to disable nUI management of the calendar.
+	  
+	* Fixed a logic error introduced in 5.03.03 in nUI_UnitReadyCheck that caused it to fail 
+	  to clear the icons in the unit frames when the ready check was complete
+	  
+	* Fixed a logic error introduced in 5.03.03 in nUI_UnitRange which caused the range 
+	  indicator to not correctly update once the initial range had been calculated
+
+	* Fixed a logic error in the casting bars which caused the bars to not be displayed in
+	  even though a cast was active in situations where the player is being spammed with
+	  interrupts or pushbacks.
+	  
+	* Entirely removed generation of dynamic memory from the following modules as well
+	  as changed how the callback notification system is engaged in order to reduce load
+	  on the event engine and update thread: nUI_UnitCasting
+	  
+-------------------------------------------------------------------------------------------
+Version 5.03.04 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Fixed a bug introduced in the Death Knight's runes by the changes made in the 5.03.03
+	  development update's rewrite of the event engine.
+	  
+	* Fixed a bug introduced in the unit frame tooltips where the party/raid role was
+	  repeated until it filled the screen -- also introduced in the 5.03.03 rewrite of the
+	  event engine.
+	  
+-------------------------------------------------------------------------------------------
+Version 5.03.03 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Added unit health and power to the unit tooltips
+	
+	* Added Poisoner to the list of minimap buttons nUI does not try to manage... this will
+	  allow Poisoner users to locate this button anywhere they need it and stil have access
+	  to it in combat without openning the button bag.
+	  
+	* Fixed a logic error in the button bag code which would cause buttons to become 
+	  unclickable in certain circumstances.
+	  
+	* Added a new slash command '/nui calendar' -- By default, nUI moves the guild calendar 
+	  button from the minimap into the button bag. This option toggles that on and off 
+	  allowing for leaving the guild calendar displayed on the minimap.
+	  
+	* Fixed a logic error in nUI_BagBar that caused it to ignore the mouseover visibility
+	  option when the UI is initially loaded.
+	  
+	* Fixed a logic error in the XP bar that would throw an error if the player hit level
+	  79 with more than a full rested level remaining.
+
+	* Tweaked the nUI_SysInfo module to display the top ten memory users in the tooltip 
+	  rather than the top three.
+	  
+	* Entirely removed generation of dynamic memory from the following modules as well
+	  as changed how the callback notification system is engaged in order to reduce load
+	  on the event engine and update thread: nUI, nUI_Location, nUI_PetFeeder, nUI_SysInfo,
+	  nUI_Button, nUI_CooldownBar, nUI_UnitComboPoints, nUI_UnitFeedback, nUI_UnitFrame,
+	  nUI_UnitGCD, nUI_UnitHappiness, nUI_UnitHealth, nUI_UnitLabel, nUI_UnitLevel,
+	  nUI_UnitPortrait, nUI_UnitPower, nUI_StatusBar, nUI_UnitPvP, nUI_UnitRaidGroup,
+	  nUI_UnitRaidTarget, nUI_UnitRange, nUI_UnitReaction, nUI_UnitReadyCheck, 
+	  nUI_UnitResting, nUI_UnitRole, nUI_UnitRunes, nUI_UnitStatus
+
+	* As of nUI 5.03.03 the following key changes have been made in nUI's licensing terms:
+	
+	  nUI is no longer covered under the GNU Public License V3 and has adopted a custom
+	  license. Copies of the complete licenses for nUI Release (aka nUI Lite) and nUI+ are
+	  included in their distribtions. Two key points have been added in the interest of
+	  protecting the rights of the distribution sites that have been authorized by myself
+	  as well as my own rights and are reproduced here for emphasis...	  
+	  
+			Redistribution of the nUI Release/nUI Lite version is permitted under the 
+			following terms... Permission is hereby	granted for unlimited free and 
+			open distribution of "nUI Release" / "nUI Lite" by anyone in any form and 
+			by any means provided the nUI Release distribution contents are not altered 
+			in any way, are distributed in full with all copyright statements and 
+			licensing terms included and intact and that any interface the end user
+			is provided for the purpose of downloading nUI includes a plainly visible 
+			and functioning link to nUI's official web site at http://www.nUIaddon.com 
+			and a plainly visible notice that nUI accepts user donations with a working
+			link to nUI's donation page at http://www.nUIaddon.com/donate.html
+
+			Deep-linking and leeching of nUI distributions is strictly prohibited. Any
+			individual or entity who wishes to offer downloads of nUI distributions 
+			must either host the legal and unmodified distribution on their own servers 
+			to be distributed at their own expense using their own bandwidth or they must 
+			link the user back to the official download page on the third party provider's 
+			servers from which the user can initiate the download. Use of any download
+			link or mechanism which initiates a download of any nUI distribution from a 
+			third party distribtion site that bypasses the official content and download
+			pages or advertisements of that third party site is strictly prohibited 
+			without the express written consent of that site.
+			
+	  I do intend to agressively enforce these terms.
+	  
+-------------------------------------------------------------------------------------------
+Version 5.03.02 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Fixed a logic error in the nUI_UnitChange module which causes it to fail to notify
+	  event listeners when the party or raid roster was updated in certain circumstances
+	  
+	* Fixed a logic error in the nUI unit change update engine which caused the performance
+	  of the engine to degrade over time as more unit data sets were cached by the engine.
+	  
+	* Modified the unit event dispatch engine and update notification system to eliminate
+	  all production of garbage memory in that system. The underlying engine now retains
+	  and reuses all memory it consumes. (note: this process is incremental, this reduces
+	  the garbage memory created by nUI's data engine, but does not fix it entirely as 
+	  yet given this process will need to be repeated in all of the modules in nUI before
+	  the issue is entirely resolved) 
+	  
+	* Entirely removed generation of dynamic memory from the following modules as well
+	  as changed how the callback notification system is engaged in order to reduce load
+	  on the event engine and update thread: nUI_Unit, nUI_UnitChange, nUI_UnitClass,
+	  nUI_UnitCombat
+	  
+	* Added information panel integration support for Skada
+	
+	* Added '/nui hud vofs {n}' slash command. This option sets vertical offset of the HUD 
+	  from the center of the view port. The default is '/nui hud vofs 0' which places the 
+	  HUD at the vertical center of the viewport. Values less than 0 move the HUD down, 
+	  greater than 0 moves the HUD up.
+	  
+	* Added the timer bar to the list of movable bars... this is the bar used to show time
+	  remaining for breath hold and exhaustion while swimming, etc.
+	  
+	* Implemented a fix for a conflict with TitanPanel when a bottom bar is enabled -- many
+	  thanks to Tristanian for researching the issue and coming up with a solution.
+	  
+	* Fixed a logic error in the nUI_BagBar that prevented the bar from being movable via
+	  '/nui movers' for many users
+	  
+	* Added the nUI special bar (pet/stance/shapeshift/auras) to the list of movable frames
+	
+	* Fixed a logic error in the nUI_StatusBar module which was causing issues with custom
+	  textures and displaying full bars when they should not be
+	  
+	* Added the ability to right-click the unit panel selector, the information panel 
+	  selector and the HUD mode selector buttons to move backwards through their respective
+	  display modes. For example, left clicking the "Player" unit panel button will switch
+	  to the "Party" unit panel mode. With this change, right-clicking the "Party" unit
+	  panel button will switch back to the "Player" unit panel mode rather than having to
+	  cycle through all of the raid panels to get back to the player mode.
+	  
+	* Made another change to nUI_Movers.lua to address ongoing conflicts with the new Bliz
+	  advanced objectives tracking frame. nUI now has *zero* interaction with this frame
+	  
+	* Changed the vertical position of the player's aura buff bars so they do not conflict
+	  with the settings tab in the chat frame
+	  
+	* Changed the anchoring the durability frame to the right edge of the display as a
+	  result of changes made in patch 3.1 and the advanced objectives tracking
+	  
+	* Moved the anchor location of the vehicle seat indicator from the top center of the
+	  display to the right edge of the display above the durability frame
+	  
+	* Modified nUI_UnitCasting to count down time remaining when channeling spells
+	
+-------------------------------------------------------------------------------------------
+Version 5.03.01
+-------------------------------------------------------------------------------------------
+
+	* Fixed the version number in the TOC
+	
+-------------------------------------------------------------------------------------------
+Version 5.03.00
+-------------------------------------------------------------------------------------------
+
+	* Added a new slash command '/nui mountscale {n}' which allows for setting a scale on
+	  the special mount / vehicle seat indicator. This option sets the scale for the seat 
+	  indicator displayed at the top center of the display when you are on a special mount. 
+	  The default is '/nui mountscale 1' where 0.5 < {n} < 1.5 -- values less than 1.0 
+	  cause the indicator to be smaller, values of {n} > 1.0 increase its size.
+	  
+	* Removed advanced objectives quest watch frame from list of managed Bliz frames... the
+	  frame is already movable and sizable, no need to manage it.
+	  
+	* Added an event handler to trap when the player changes spec's if dual spec'd -- does
+	  not yet work for party/raid members... only the player itself.
+	  
+	* Fixed a bug in the unit frame tooltips for raid unit frames that caused the mouseover
+	  to display information for the wrong player after the raid frames were sorted
+	  
+-------------------------------------------------------------------------------------------
+Version 5.02.06 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Added a vehicle leave button to the pet/special bars for use with special mounts
+	
+	* Added the vehicle seat indicator to nUI's list of managed frames and movers
+	
+	* Modified nUI_UnitCasting to key on the UNIT_SPELLCAST_STOP event as the event that
+	  clears an active casting bar to overcome a change in casting event logic introduced
+	  in a prior Bliz patch that caused spamming the action bar to cancel the active cast
+	  bar even though the spell was still active.
+	  
+	* Modified the cooldown bar audio alert logic to only allow audio alerts to play once
+	  every two seconds and to never stack multiple audio alerts at one time (volume stack)
+	  
+	* Fixed a logic error in nUI_UnitAura which allowed the HOT/DOT bar to overflow its
+	  defined maximum size if that was less than the value set by '/nui maxauras {n}'
+	  
+	* Modified the combat log to not alter the font size when the player session starts
+	  so that player preferences are not overwritten by the nUI scale calculations
+	  
+	* Modified the cooldown bar to be aware of player talent spec swapping and to reset
+	  the bar when the player changes spec.
+	  
+	* Fixed a bug in the '/nui autogroup' logic which caused it to not default to enabled
+	
+	* Added sorting of raid unit frames
+	
+	* Added new slash command '/nui raidsort {unit|group|class}' to select the type of sort
+	  used on raid unit frames. The 'unit' option causes the raid unit frames to be sorted
+	  by their unit ID from raid1 to raid40. The 'group' option causes the raid unit frames
+	  to sort first by the raid group number then by player name within that group. The
+	  'class' option causes the frames to sort first by player class, then by player name
+	  within the class
+	  
+	* Added a trap for an error in nUI_UnitAura where it would throw an error if the system
+	  detected an enchant on your weapon before the details of the enchant are available
+	  
+-------------------------------------------------------------------------------------------
+Version 5.02.05 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Fixed a logic error in the action bars which caused the buttons to be marked as
+	  unavailable when they were not and visa versa.
+	  
+	* Updated Simplified Chinese localization files (thank you Yanwin) 
+	
+	* Updated Traditional Chinese localization files (thank you Yanwin) 
+	
+-------------------------------------------------------------------------------------------
+Version 5.02.04 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Fixed a major bug introduced in 5.02.02 which prevented the action buttons from 
+	  updating when you switched druid forms, warrior stances, rogue stealth, mounted or
+	  dismounted a vehicle while in combat
+	  
+	* Fixed a bug in the new action bar code which prevented the ctrl-alt-right-click key
+	  binding menu from working
+	  
+-------------------------------------------------------------------------------------------
+Version 5.02.03 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Facepalm -- I forgot to remove the comment from the vehicle menu bar after testing
+	
+-------------------------------------------------------------------------------------------
+Version 5.02.02 (Development)
+-------------------------------------------------------------------------------------------
+
+	* Fixed a layering bug in the combat log which caused the combat log filter buttons to
+	  be under the combat log text
+	  
+	* Added vehicle seats to the main action bar when mounted
+	
+	* Added vehicle exit button to the main action bar when mounted
+	
+	* Added a check in the range indicator engine to ensure that all spells used in the
+	  calculation have a max range that is greater than zero in an attempt to fix a range
+	  bug introduced in 3.1 where spells are flagged as having range, but do not actually.
+	  
+	* Fixed a logic error in the range calculation
+	
+	* Recoded the nUI action bars to try and resolve a taint issue.
+	
+	* Modified the bar display logic so that possession or mounting a vehicle will override
+	  action bar pages 2 though 5 so no matter which bar is the active page, it will now
+	  display the spells for the possessed mob or vehicle. Note that shift-2 through 
+	  shift-5 and the action bar scroll buttons no longer work when you are in possession 
+	  of another mob/player or mounted on a vehicle.
+	  
+	* Added awareness of the presence of Chatter and disabled nUI's management of the chat
+	  frame edit box if Chatter is present
+	  
+	* Added Russian localization (thank you Vlad)
+	
+-------------------------------------------------------------------------------------------
+Version 5.02.01 (Development)
+-------------------------------------------------------------------------------------------
+
+    * Attempted fix for filtering between player spells and non-player spells
+    
+-------------------------------------------------------------------------------------------
+Version 5.02.00 (Development)
+-------------------------------------------------------------------------------------------
+
+	* First development release for WoW patch 3.1 on the live realms
+	
+	* Updated for PTR patch 0.1.0.9767
+	
+	* Fixed a bug in nUI_UnitLevel thrown when levelling a character using either the
+	  Simplified Chinese or Traditional Chinese localization file
+	  
+-------------------------------------------------------------------------------------------
+Version 5.01.05 (PTR Beta)
+-------------------------------------------------------------------------------------------
+
+	* Updated for PTR patch 0.1.0.9757
+	
+	* Added support for displaying agro feedback on more than one unit for off-tanks and 
+	  agro grabs, threat wipes, etc.
+	  
+	* Added nUI_UnitThreat module to track threat on all active and available mobs for all
+	  relevant unit IDs -- not yet added to the HUD however
+	  
+	* Fixed a bug in the '/nui feedback' slash command that threw an error if no argument 
+	  was given
+	  
+	* Fixed a scaling bug in the bag bar available slots/stock count text
+	
+	* Added unit frame tooltips to the same control group as action bar tooltips so the
+	  '/nui combattips' option turns their display on and off depending on whether you
+	  are in combat or out of combat. Prevents tooltips from interfering with clicking
+	  during combat. '/nui combattips' toggles this behavior on and off.
+	
+-------------------------------------------------------------------------------------------
+Version 5.01.04 (PTR Beta)
+-------------------------------------------------------------------------------------------
+
+	* Updated for PTR patch 0.1.0.9742
+	
+	* completed compliance with Blizzard's new add-on development guidelines
+	
+	* Introduced nUI+
+	
+-------------------------------------------------------------------------------------------
+Version 5.01.03 (PTR Beta)
+-------------------------------------------------------------------------------------------
+
+	* Ported nUI to PTR patch 0.1.0.9704 compatibility
+	
+	* Fixed a bug in the Battlefield Minimap integration resulting from the new patch
+	
+	* Changed HUD casting bars to show casting time rather than percent by default
+	
+	* Change player, target and focus unit frame casting bars to show time rather than percent
+	
+	* Changed casting bar time display to show tenths of a second
+	
+-------------------------------------------------------------------------------------------
+Version 5.01.02 (PTR Beta)
+-------------------------------------------------------------------------------------------
+
+	* Updated TOC for WoW patch 3.1
+	
+	* Changed talent spec module to ignore requests for build info on the mouseover unit
+	  which apparently causes conflicts with the tooltip engine when the player is trying
+	  to inspect their own gear
+	
+	* Added a block gap between the stance bar and pet bar when both are displayed together
+	
+	* Updated nUI_UnitAura to reflect changes in the UnitAura() API return values in 3.1
+	
+	* Updated French localization file (thank you Arnaud)
+	
+	* Updated Spanish localization file (thank you José)
+	
+-------------------------------------------------------------------------------------------
+Version 5.01.01
+-------------------------------------------------------------------------------------------
+
+	* Removed an old debug print line the produced the odd message "using cooldown for this"
+	  in the chat frame at seemingly random times
+	  
+	* Updated German localization file (thank you Marcel)
+	
+	* Adjusted the size of the cooldown bar in an attempt to stop it from wrapping
+	
+	* Added casting bars to the player and target unit frames in the 25 and 40 man raids
+	
+-------------------------------------------------------------------------------------------
+Version 5.01.00
+-------------------------------------------------------------------------------------------
+
+	* nUI sheds its "beta" status and goes live... /happydance
+	
+	* Split nUI into two versions... the public "nUI Lite" free version and the private
+	  "nUI Pro" version for nUI's supporters
+	  
+	* Added linkbacks to nUI's new web site at http://www.nUIAddOn.com
+	
+	* Fixed a logic error in the '/nui feedback' slash command that threw an error if a
+	  bad argument, or no argument, was given to the command.
+	  
+-------------------------------------------------------------------------------------------
+Version 5.00.03 (Alpha)
+-------------------------------------------------------------------------------------------
+
+	* Yet another fix for the agro logic to prevent complex hard loops (player targets a
+	  mob to targets a player to targets a mob who targets the original player for example)
+	  which continued to cause WoW lockups.
+	  
+	* Added a new set of slash commands for the feedback system...
+	
+	  /nui feedback curse
+	  /nui feedback disease
+	  /nui feedback magic
+	  /nui feedback poison
+	  
+	  These options allow the player to individually disable or enable each of the four
+	  feedback highlight types so that you can enable only those types you can dispell. By
+	  default all four types are enabled.
+	  
+-------------------------------------------------------------------------------------------
+Version 5.00.02 (Alpha)
+-------------------------------------------------------------------------------------------
+
+	* Fixed a logic error in the determination of who has current agro that caused WoW to
+	  freeze if any unit in the target chain was targeting itself (yes, an endless loop)
+	  
+	* Added a new slash command '/nui showhits' which turns off the red/green background
+	  highlighting on unit frames when they are taking damage or receiving heals.
+	  
+	* Fixed the rotation order in the unit frames to 25 man precedes 40 man
+	
+	* Fixed a logic error in the aura bars where the bars failed to resize when the target
+	  died or when switching to a new target that had no auras on it
+	
+-------------------------------------------------------------------------------------------
+Version 5.00.01 (Alpha)
+-------------------------------------------------------------------------------------------
+
+	* Ported nUI 5.0 to WoW Patch 3.1
+	
+	* Added combat feedback to unit frames... shows a red background on unit frames when 
+	  the unit takes damage, a green background when it receives a heal
+	  
+	* Added debuff highlights to unit frames... unit frame borders highlight blue when a
+	  magic debuff is on the unit, green when diseased, yellow when poisoned and purple
+	  when cursed.
+	  
+	* Add agro indicator to unit frames... unit frame border highlights in red when the
+	  unit is targeted by a hostile unit in the player's target chain or focus chain if
+	  no hostile units exist in the target chain.
+	  
+	* Greatly improved the hit and heal indicator update frequency in the battlefield
+	  minimap for PvP/Battleground play
+	  
+	* Finally found and added a fix for the annoying invisible bottom bar Titan Panel
+	  creates. This should prevent that bar from interfering with the bottom of the dashboard
+	  
+	* Added the slash command '/nui hud focus' which toggles display of the player's focus
+	  on and off in the HUD. By default, the HUD ignores the focus frame and displays the
+	  player's target and target-of-target (ToT). Enabling this option will cause the HUD
+	  to replace the player's target with the player's focus if and when the player sets a
+	  focus. In addition, when this option is enabled, the ToT is replaced with the focus' 
+	  target if a focus is set. If no focus is set, the HUD will display the target and 
+	  the ToT as per normal.
+	  
+-------------------------------------------------------------------------------------------
+Version 5.00.00 (Alpha)
+-------------------------------------------------------------------------------------------
+
+    * First release

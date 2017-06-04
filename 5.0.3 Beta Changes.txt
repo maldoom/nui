@@ -1,0 +1,8 @@
+5.0.3 Beta Changes
+
+Units/nUI_Units.xml
+1. UnitClass.lua has to be loaded before other Unit files.
+
+Plugins/nUI_Movers.lua
+1. Added PetBattleFrame to mover system and repositioned it.
+

@@ -1,0 +1,40 @@
+
+7.0.3 (Legion) Beta Changes
+
+nUI_HUD.lua
+	Death Knight Rune loop change as now flexible number between 1 and 7
+
+nUI_ChatFrame.lua
+	Removal of BNConversation related objects as they no longer exist
+
+nUI_UnitRunes.lua
+	Various changes in view of Death Knight Rune changes
+
+nUI_UnitPower.lua
+	Various Changes to utilise the additional power types
+	HUD power bar now changes based on active power type	
+	Set up nUI_DefaultConfig.BarColors.PowerIDs to convert powerType to nUI powerNames
+
+nUI_UnitClass.lua
+	Changes to reflect new classes
+
+nUI_ShapeshiftBar.lua
+	Change CooldownFrame_SetTimer to CooldownFrame_Set 
+
+TODO
+
+fix power bar in unit frame to work similar to hud, but how ???
+
+fix ObjectiveTrackerFrame mover
+
+Max XP Level Numbers
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110

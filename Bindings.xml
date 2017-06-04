@@ -1,0 +1,130 @@
+﻿<!--
+
+Copyright (c) 2008-2017 by K. Scott Piel 
+All Rights Reserved
+
+E-mail: < kscottpiel@gmail.com >
+
+This file is part of nUI.
+
+The author no longer develops or directly supports this addon and has released it
+into the public domain under the Creative Commons Attribution-NonCommercial 3.0 
+Unported license - a copy of which is included in this distribution. This source
+may not be distributed without said license.
+	   
+nUI is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR 
+PURPOSE.  See the enclosed license for more details.
+	
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS  "AS IS" AND 
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT  LIMITED TO, THE IMPLIED 
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, 
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+
+<Bindings>
+
+    <Binding name="CLICK nUI_ActionBar_Button1:LeftButton" description="nUI_ACTIONBAR1" header="nUI_ACTIONBAR">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_ActionBar_Button2:LeftButton" description="nUI_ACTIONBAR2">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_ActionBar_Button3:LeftButton" description="nUI_ACTIONBAR3">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_ActionBar_Button4:LeftButton" description="nUI_ACTIONBAR4">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_ActionBar_Button5:LeftButton" description="nUI_ACTIONBAR5">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_ActionBar_Button6:LeftButton" description="nUI_ACTIONBAR6">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_ActionBar_Button7:LeftButton" description="nUI_ACTIONBAR7">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_ActionBar_Button8:LeftButton" description="nUI_ACTIONBAR8">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_ActionBar_Button9:LeftButton" description="nUI_ACTIONBAR9">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_ActionBar_Button10:LeftButton" description="nUI_ACTIONBAR10">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_ActionBar_Button11:LeftButton" description="nUI_ACTIONBAR11">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_ActionBar_Button12:LeftButton" description="nUI_ACTIONBAR12">--[[ dummy ]]</Binding>
+
+    <Binding name="CLICK nUI_TopLeftBar_Button1:LeftButton" description="nUI_TOPLEFTBAR1" header="nUI_TOPLEFTBAR">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopLeftBar_Button2:LeftButton" description="nUI_TOPLEFTBAR2">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopLeftBar_Button3:LeftButton" description="nUI_TOPLEFTBAR3">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopLeftBar_Button4:LeftButton" description="nUI_TOPLEFTBAR4">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopLeftBar_Button5:LeftButton" description="nUI_TOPLEFTBAR5">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopLeftBar_Button6:LeftButton" description="nUI_TOPLEFTBAR6">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopLeftBar_Button7:LeftButton" description="nUI_TOPLEFTBAR7">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopLeftBar_Button8:LeftButton" description="nUI_TOPLEFTBAR8">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopLeftBar_Button9:LeftButton" description="nUI_TOPLEFTBAR9">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopLeftBar_Button10:LeftButton" description="nUI_TOPLEFTBAR10">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopLeftBar_Button11:LeftButton" description="nUI_TOPLEFTBAR11">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopLeftBar_Button12:LeftButton" description="nUI_TOPLEFTBAR12">--[[ dummy ]]</Binding>
+
+    <Binding name="CLICK nUI_TopRightBar_Button1:LeftButton" description="nUI_TOPRIGHTBAR1" header="nUI_TOPRIGHTBAR">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopRightBar_Button2:LeftButton" description="nUI_TOPRIGHTBAR2">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopRightBar_Button3:LeftButton" description="nUI_TOPRIGHTBAR3">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopRightBar_Button4:LeftButton" description="nUI_TOPRIGHTBAR4">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopRightBar_Button5:LeftButton" description="nUI_TOPRIGHTBAR5">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopRightBar_Button6:LeftButton" description="nUI_TOPRIGHTBAR6">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopRightBar_Button7:LeftButton" description="nUI_TOPRIGHTBAR7">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopRightBar_Button8:LeftButton" description="nUI_TOPRIGHTBAR8">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopRightBar_Button9:LeftButton" description="nUI_TOPRIGHTBAR9">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopRightBar_Button10:LeftButton" description="nUI_TOPRIGHTBAR10">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopRightBar_Button11:LeftButton" description="nUI_TOPRIGHTBAR11">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_TopRightBar_Button12:LeftButton" description="nUI_TOPRIGHTBAR12">--[[ dummy ]]</Binding>
+
+    <Binding name="CLICK nUI_LeftUnitBar_Button1:LeftButton" description="nUI_LEFTUNITBAR1" header="nUI_LEFTUNITBAR">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_LeftUnitBar_Button2:LeftButton" description="nUI_LEFTUNITBAR2">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_LeftUnitBar_Button3:LeftButton" description="nUI_LEFTUNITBAR3">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_LeftUnitBar_Button4:LeftButton" description="nUI_LEFTUNITBAR4">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_LeftUnitBar_Button5:LeftButton" description="nUI_LEFTUNITBAR5">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_LeftUnitBar_Button6:LeftButton" description="nUI_LEFTUNITBAR6">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_LeftUnitBar_Button7:LeftButton" description="nUI_LEFTUNITBAR7">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_LeftUnitBar_Button8:LeftButton" description="nUI_LEFTUNITBAR8">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_LeftUnitBar_Button9:LeftButton" description="nUI_LEFTUNITBAR9">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_LeftUnitBar_Button10:LeftButton" description="nUI_LEFTUNITBAR10">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_LeftUnitBar_Button11:LeftButton" description="nUI_LEFTUNITBAR11">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_LeftUnitBar_Button12:LeftButton" description="nUI_LEFTUNITBAR12">--[[ dummy ]]</Binding>
+
+    <Binding name="CLICK nUI_RightUnitBar_Button1:LeftButton" description="nUI_RIGHTUNITBAR1" header="nUI_RIGHTUNITBAR">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_RightUnitBar_Button2:LeftButton" description="nUI_RIGHTUNITBAR2">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_RightUnitBar_Button3:LeftButton" description="nUI_RIGHTUNITBAR3">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_RightUnitBar_Button4:LeftButton" description="nUI_RIGHTUNITBAR4">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_RightUnitBar_Button5:LeftButton" description="nUI_RIGHTUNITBAR5">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_RightUnitBar_Button6:LeftButton" description="nUI_RIGHTUNITBAR6">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_RightUnitBar_Button7:LeftButton" description="nUI_RIGHTUNITBAR7">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_RightUnitBar_Button8:LeftButton" description="nUI_RIGHTUNITBAR8">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_RightUnitBar_Button9:LeftButton" description="nUI_RIGHTUNITBAR9">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_RightUnitBar_Button10:LeftButton" description="nUI_RIGHTUNITBAR10">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_RightUnitBar_Button11:LeftButton" description="nUI_RIGHTUNITBAR11">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_RightUnitBar_Button12:LeftButton" description="nUI_RIGHTUNITBAR12">--[[ dummy ]]</Binding>
+
+    <Binding name="CLICK nUI_BottomLeftBar_Button1:LeftButton" description="nUI_BOTTOMLEFTBAR1" header="nUI_BOTTOMLEFTBAR">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomLeftBar_Button2:LeftButton" description="nUI_BOTTOMLEFTBAR2">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomLeftBar_Button3:LeftButton" description="nUI_BOTTOMLEFTBAR3">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomLeftBar_Button4:LeftButton" description="nUI_BOTTOMLEFTBAR4">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomLeftBar_Button5:LeftButton" description="nUI_BOTTOMLEFTBAR5">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomLeftBar_Button6:LeftButton" description="nUI_BOTTOMLEFTBAR6">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomLeftBar_Button7:LeftButton" description="nUI_BOTTOMLEFTBAR7">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomLeftBar_Button8:LeftButton" description="nUI_BOTTOMLEFTBAR8">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomLeftBar_Button9:LeftButton" description="nUI_BOTTOMLEFTBAR9">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomLeftBar_Button10:LeftButton" description="nUI_BOTTOMLEFTBAR10">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomLeftBar_Button11:LeftButton" description="nUI_BOTTOMLEFTBAR11">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomLeftBar_Button12:LeftButton" description="nUI_BOTTOMLEFTBAR12">--[[ dummy ]]</Binding>
+
+    <Binding name="CLICK nUI_BottomRightBar_Button1:LeftButton" description="nUI_BOTTOMRIGHTBAR1" header="nUI_BOTTOMRIGHTBAR">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomRightBar_Button2:LeftButton" description="nUI_BOTTOMRIGHTBAR2">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomRightBar_Button3:LeftButton" description="nUI_BOTTOMRIGHTBAR3">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomRightBar_Button4:LeftButton" description="nUI_BOTTOMRIGHTBAR4">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomRightBar_Button5:LeftButton" description="nUI_BOTTOMRIGHTBAR5">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomRightBar_Button6:LeftButton" description="nUI_BOTTOMRIGHTBAR6">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomRightBar_Button7:LeftButton" description="nUI_BOTTOMRIGHTBAR7">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomRightBar_Button8:LeftButton" description="nUI_BOTTOMRIGHTBAR8">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomRightBar_Button9:LeftButton" description="nUI_BOTTOMRIGHTBAR9">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomRightBar_Button10:LeftButton" description="nUI_BOTTOMRIGHTBAR10">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomRightBar_Button11:LeftButton" description="nUI_BOTTOMRIGHTBAR11">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_BottomRightBar_Button12:LeftButton" description="nUI_BOTTOMRIGHTBAR12">--[[ dummy ]]</Binding>
+
+    <Binding name="CLICK nUI_ButtonBagButton:LeftButton" description="nUI_BUTTONBAG" header="nUI_MISCKEYS">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_HUDLayoutSelector_Button:LeftButton" description="nUI_HUDSELECTOR">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_InfoPanelSelector_Button:LeftButton" description="nUI_INFOSELECTOR">--[[ dummy ]]</Binding>
+    <Binding name="CLICK nUI_UnitPanelSelector_Button:LeftButton" description="nUI_UNITSELECTOR">--[[ dummy ]]</Binding>
+    
+</Bindings>
